@@ -1,0 +1,47 @@
+/* src/components/superadmin/AuditDetailsModal.css */
+.audit-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.audit-modal {
+    background-color: white;
+    width: 600px;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.audit-info p {
+    margin-bottom: 8px;
+}
+
+.audit-info pre {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.btn-close {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.btn-close:hover {
+    background-color: #0056b3;
+}

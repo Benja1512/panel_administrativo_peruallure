@@ -1,0 +1,32 @@
+.reportes-page {
+    padding: 2rem;
+}
+
+.chart-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.reportes-container {
+    padding: 2rem 2rem 2rem 260px;
+    background-color: #f4f6f8;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.reportes-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.reportes-chart {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+}

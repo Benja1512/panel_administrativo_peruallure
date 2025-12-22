@@ -1,0 +1,17 @@
+.welcome-banner {
+    background-color: #f1f5f9;
+    border-left: 6px solid #38bdf8;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    color: #1e293b;
+}
+.welcome-banner h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+.welcome-banner p {
+    margin: 0.2rem 0;
+    font-size: 1rem;
+    color: #334155;
+}

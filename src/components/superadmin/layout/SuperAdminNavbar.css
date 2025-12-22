@@ -1,0 +1,55 @@
+/* src/components/superadmin/SuperAdminNavbar.css */
+
+.superadmin-navbar {
+    height: 65px;
+    background: #ffffff; /* Fondo blanco limpio */
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    border-bottom: 3px solid #c1121f; /* Rojo estilo PeruAllure */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Título a la izquierda */
+.superadmin-navbar .navbar-left h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c1121f; /* Rojo corporativo */
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Usuario y logout a la derecha */
+.superadmin-navbar .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Info de usuario */
+.superadmin-navbar .user-info {
+    font-size: 14px;
+    color: #444;
+    font-weight: 500;
+}
+
+/* Botón logout */
+.superadmin-navbar .logout-btn {
+    background: #c1121f;
+    border: none;
+    padding: 8px 14px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.superadmin-navbar .logout-btn:hover {
+    background: #a60e18;
+    transform: translateY(-2px);
+}

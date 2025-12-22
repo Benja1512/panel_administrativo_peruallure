@@ -1,0 +1,28 @@
+.clientes-top-tvl-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.clientes-top-tvl-container h3 {
+    margin-bottom: 16px;
+    font-size: 1.25rem;
+}
+
+.clientes-tvl-tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.clientes-tvl-tabla th,
+.clientes-tvl-tabla td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.clientes-tvl-tabla th {
+    background-color: #f4f4f4;
+}
