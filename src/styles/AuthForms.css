@@ -1,0 +1,113 @@
+/* === LAYOUT GENERAL === */
+.auth-layout {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    background: #f3f4f6;
+}
+
+/* === SIDEBAR IZQUIERDA === */
+.auth-sidebar {
+    background: #111827;
+    color: #ffffff;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.roles-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+}
+
+.roles-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.role-item {
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.06);
+    transition: all 0.2s ease;
+}
+
+.role-item:hover {
+    background: rgba(255, 255, 255, 0.14);
+}
+
+.role-item.active {
+    background: #e53935;
+    font-weight: 600;
+}
+
+/* === LOGIN AREA === */
+.auth-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-card {
+    background: #ffffff;
+    padding: 32px;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.auth-title {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+    .auth-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-sidebar {
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .roles-list {
+        display: flex;
+        gap: 10px;
+    }
+
+    .role-item {
+        white-space: nowrap;
+    }
+}
+.auth-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.auth-welcome {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 6px;
+}
+
+.auth-welcome span {
+    color: #e53935; /* color marca */
+}
+
+.auth-subtitle {
+    font-size: 14px;
+    color: #6b7280;
+}
