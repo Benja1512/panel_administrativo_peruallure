@@ -1,63 +1,87 @@
-/* src/components/superadmin/SuperAdminSidebar.css */
-
+/* =============================
+   SIDEBAR CONTENEDOR
+============================= */
 .superadmin-sidebar {
-    width: 240px;
-    background-color: #ffffff; /* fondo claro */
-    color: #333;
-    padding: 1.5rem 1rem;
-    height: 100vh;
-    border-right: 2px solid #f1f1f1;
-    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
-    position: fixed;
-    top: 65px; /* para que no tape al navbar */
-    left: 0;
-    overflow-y: auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 260px;
+    min-height: 100vh;
+    background: #ffffff;
+    border-right: 1px solid #ffffff;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Título superior */
-.superadmin-sidebar h2 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
+/* =============================
+   HEADER
+============================= */
+.sidebar-header {
     text-align: center;
-    color: #c1121f; /* rojo corporativo */
+    margin-bottom: 32px;
 }
 
-/* Lista de navegación */
-.superadmin-sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.sidebar-header h2 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #dc2626;
+    margin-bottom: 6px;
 }
 
-.superadmin-sidebar li {
-    margin: 0.5rem 0;
+.sidebar-header span {
+    font-size: 13px;
+    color: #000000;
 }
 
-/* Enlaces */
-.superadmin-sidebar a {
-    color: #444;
-    text-decoration: none;
-    display: block;
-    padding: 0.75rem 1rem;
-    border-radius: 6px;
-    font-size: 0.95rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
+/* =============================
+   MENU
+============================= */
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-/* Hover */
-.superadmin-sidebar a:hover {
-    background-color: #f8f8f8;
-    color: #c1121f;
-    transform: translateX(4px);
-}
+/* =============================
+   ITEM BASE
+============================= */
+.sidebar-item {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-/* Enlace activo */
-.superadmin-sidebar a.active {
-    background-color: #c1121f;
-    color: #fff !important;
+    border-radius: 10px;
+    font-size: 14px;
     font-weight: 600;
-    box-shadow: inset 4px 0 0 #8b0d16;
+    text-decoration: none;
+
+    color: #f6d4cc;
+    background: rgb(85, 82, 82); /*cada cuadro*/
+
+    transition: all 0.25s ease;
+}
+
+/* =============================
+   HOVER
+============================= */
+.sidebar-item:hover {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+/* =============================
+   ACTIVO
+============================= */
+.sidebar-item.active {
+    background: #dc2626;
+    color: #ffffff;
+    box-shadow: 0 6px 16px rgba(9, 9, 9, 0.35);
+}
+
+/* =============================
+   DESHABILITADO
+============================= */
+.sidebar-item.disabled {
+    background: #f1f5f9;
+    color: #000000;
+    cursor: not-allowed;
 }

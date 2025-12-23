@@ -1,0 +1,36 @@
+/* =============================
+   VARIABLES
+============================= */
+:root {
+    --sidebar-width: 260px;
+    --bg-main: #f8fafc;
+}
+
+/* =============================
+   LAYOUT PRINCIPAL
+============================= */
+.layout-panel {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background: var(--bg-main);
+}
+
+/* =============================
+   SIDEBAR (RESERVA ESPACIO)
+============================= */
+.layout-panel > aside {
+    width: var(--sidebar-width);
+    flex-shrink: 0;
+}
+
+/* =============================
+   CONTENIDO
+============================= */
+.layout-content {
+    flex: 1;
+    padding: 32px;
+    background: var(--bg-main);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
