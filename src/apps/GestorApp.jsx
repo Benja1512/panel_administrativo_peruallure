@@ -1,23 +1,13 @@
 import React from "react";
-import "../styles/AppPanel.css";
+import SidebarGestor from "../components/gestor/SidebarGestor";
+import "../styles/LayoutPanel.css"; //
 
 const GestorApp = () => {
     return (
-        <div className="admin-layout">
-            <aside className="admin-sidebar">
-                <h2 className="sidebar-title">Gestor</h2>
-                <p className="sidebar-company">Peru Allure Company</p>
+        <div className="layout-panel">
+            <SidebarGestor />  {/* 📌 Menu igual al de Admin / SuperAdmin */}
 
-                <nav className="sidebar-menu">
-                    <button className="menu-item active">Resumen</button>
-                    <button className="menu-item">Operaciones</button>
-                    <button className="menu-item">Pedidos</button>
-                    <button className="menu-item">Clientes</button>
-                    <button className="menu-item">Reportes</button>
-                </nav>
-            </aside>
-
-            <main className="admin-content">
+            <main className="layout-content">
                 <h1 className="panel-title">Panel Gestor</h1>
                 <p className="panel-subtitle">
                     Supervisión operativa y control de procesos.

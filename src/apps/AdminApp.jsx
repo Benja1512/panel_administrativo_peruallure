@@ -1,18 +1,13 @@
 import React from "react";
-import SuperAdminSidebar from "../components/superadmin/layout/SuperAdminSidebar";
-import SuperAdminRoutes from "../routes/SuperAdminRoutes";
-import "../styles/LayoutPanel.css";
+import AdminLayout from "../components/admin/AdminLayout";
+import AdminRoutes from "../routes/AdminRoutes";
 
-const SuperAdminApp = () => {
+const AdminApp = () => {
     return (
-        <div className="layout-panel">
-            <SuperAdminSidebar />
-
-            <main className="layout-content">
-                <SuperAdminRoutes />
-            </main>
-        </div>
+        <AdminLayout>
+            <AdminRoutes />
+        </AdminLayout>
     );
 };
 
-export default SuperAdminApp;
+export default AdminApp;

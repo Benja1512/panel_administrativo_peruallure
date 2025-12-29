@@ -4,7 +4,7 @@
 .superadmin-sidebar {
     width: 260px;
     min-height: 100vh;
-    background: #ffffff;
+    background: #f6ebeb;
     border-right: 1px solid #ffffff;
     padding: 24px 16px;
     display: flex;
@@ -55,7 +55,7 @@
     text-decoration: none;
 
     color: #f6d4cc;
-    background: rgb(85, 82, 82); /*cada cuadro*/
+    background: rgb(220, 56, 56); /*cada cuadro*/
 
     transition: all 0.25s ease;
 }
