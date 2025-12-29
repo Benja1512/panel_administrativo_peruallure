@@ -85,3 +85,46 @@
     color: #000000;
     cursor: not-allowed;
 }
+
+
+/* 🔥 SOLO ESTO ES NUEVO — mantiene tu diseño */
+.sidebar-scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(100vh - 120px); /* Mantiene el header arriba */
+}
+
+/* Scroll fino y elegante */
+.sidebar-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb {
+    background: #ffffff55;
+    border-radius: 10px;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb:hover {
+    background: #ffffff88;
+}
+
+
+/* 📌 Títulos de secciones - más separación y elegancia */
+.sidebar-subtitle {
+    margin-top: 18px;               /* más espacio arriba */
+    margin-bottom: 10px;            /* espacio debajo del título */
+    padding-left: 6px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1d1d1d;                 /* tono elegante oscuro */
+    letter-spacing: 0.3px;          /* hace que se lea más premium */
+}
+
+/* 🔹 Ícono y título más alineado */
+.sidebar-subtitle::before {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 14px;
+    background: #0059ff;            /* marca lateral sutil */
+    border-radius: 4px;
+    margin-right: 8px;
+}
