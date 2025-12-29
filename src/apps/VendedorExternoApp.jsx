@@ -1,32 +1,25 @@
 import React from "react";
-import "../styles/AppPanel.css";
+import { Outlet } from "react-router-dom";
+
+// 🔥 ESTA ES LA RUTA CORRECTA
+import SidebarExterno from "../components/externo/SidebarExterno";
+
+import "../styles/LayoutPanel.css";
 
 const VendedorExternoApp = () => {
     return (
-        <div className="admin-layout">
-            <aside className="admin-sidebar">
-                <h2 className="sidebar-title">Externo</h2>
-                <p className="sidebar-company">Peru Allure Company</p>
+        <div className="layout-panel">
+            <SidebarExterno />
 
-                <nav className="sidebar-menu">
-                    <button className="menu-item active">Ventas</button>
-                    <button className="menu-item">Catálogo</button>
-                    <button className="menu-item">Clientes</button>
-                    <button className="menu-item">Soporte</button>
-                </nav>
-            </aside>
-
-            <main className="admin-content">
-                <h1 className="panel-title">Vendedor Externo</h1>
-                <p className="panel-subtitle">
-                    Acceso externo para gestión comercial básica.
-                </p>
+            <main className="layout-content">
+                <h1 className="panel-title">Panel Vendedor Externo</h1>
+                <p className="panel-subtitle">Gestión de ventas en campo y cartera asignada.</p>
 
                 <div className="panel-card">
-                    <p>
-                        Accede al catálogo, registra ventas y consulta información básica.
-                    </p>
+                    Controla tus clientes asignados, registra ventas y reportes diarios.
                 </div>
+
+                <Outlet />
             </main>
         </div>
     );
