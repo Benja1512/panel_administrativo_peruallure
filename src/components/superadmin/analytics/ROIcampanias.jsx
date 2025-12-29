@@ -1,19 +1,10 @@
 import React from "react";
-import "../../../styles/ROICampanias.css";
 
-const ROIcampanias = () => {
-    return (
-        <div className="analytics-card">
-            <h3>ROI de Campañas</h3>
-            <p>
-                Evalúa el retorno de inversión de campañas comerciales y de marketing
-                para optimizar presupuestos.
-            </p>
-            <div className="analytics-placeholder">
-                💰 ROI por Campaña
-            </div>
-        </div>
-    );
-};
+const ResumenGeneral = () => (
+    <div className="panel-card">
+        <h2>📋 Resumen General</h2>
+        <p>Instantánea completa del estado del negocio: ventas, logística y clientes.</p>
+    </div>
+);
 
-export default ROIcampanias;
+export default ResumenGeneral;

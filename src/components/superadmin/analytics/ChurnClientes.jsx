@@ -1,19 +1,10 @@
 import React from "react";
-import "../../../styles/ChurnClientes.css";
 
-const ChurnClientes = () => {
-    return (
-        <div className="analytics-card">
-            <h3>Tasa de Churn de Clientes</h3>
-            <p>
-                Analiza la tasa de abandono de clientes para anticipar riesgos
-                y mejorar la retención.
-            </p>
-            <div className="analytics-placeholder">
-                🔻 Indicador de Churn
-            </div>
-        </div>
-    );
-};
+const ChurnClientes = () => (
+    <div className="panel-card">
+        <h2>🔁 Churn de Clientes</h2>
+        <p>Mide el abandono o pérdida de clientes en un periodo.</p>
+    </div>
+);
 
 export default ChurnClientes;

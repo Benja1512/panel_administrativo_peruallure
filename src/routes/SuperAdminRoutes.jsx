@@ -1,41 +1,67 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 
+/* 📌 Dashboard & Base */
 import DashboardSuperAdminPage from "../pages/superadmin/DashboardSuperAdminPage";
+
+/* 📌 Analytics */
 import AnalyticsRouter from "../pages/superadmin/analytics/AnalyticsRouter";
+
+/* 📌 Gestión de Usuarios y Control */
 import UsuariosPage from "../pages/superadmin/UsuariosPage";
 import RolesPage from "../pages/superadmin/RolesPage";
 import PermisosPage from "../pages/superadmin/PermisosPage";
+import AsignarPermisosPage from "../pages/superadmin/AsignarPermisosPage";
+
+/* 📌 Seguridad & Auditoría */
 import HistorialAlertasPage from "../pages/superadmin/HistorialAlertasPage";
+import DetalleComparativaPage from "../pages/superadmin/DetalleComparativaPage";
+
+/* 📌 Configuración del Sistema */
 import ConfiguracionPage from "../pages/superadmin/ConfiguracionPage";
+
+/* 📌 Soporte */
 import SoportePage from "../pages/superadmin/SoportePage";
+
+/* 📌 Ventas Globales */
+import VentasDiariasPage from "../pages/superadmin/VentasDiariasPage";
+import VentasMensualesPage from "../pages/superadmin/VentasMensualesPage";
+import VentasSemanalesPage from "../pages/superadmin/VentasSemanalesPage";
 
 const SuperAdminRoutes = () => {
     return (
         <Routes>
-            {/* 🔹 Al entrar a /superadmin redirige al dashboard */}
+
+            {/* 🚀 Ingreso base → Dashboard */}
             <Route index element={<Navigate to="dashboard" replace />} />
 
-            {/* 🔹 Dashboard principal */}
+            {/* 🏠 Dashboard principal */}
             <Route path="dashboard" element={<DashboardSuperAdminPage />} />
 
-            {/* 🔹 Analytics (router interno) */}
+            {/* 📊 Analytics Global */}
             <Route path="analytics/*" element={<AnalyticsRouter />} />
 
-            {/* 🔹 Gestión */}
+            {/* 👥 Gestión */}
             <Route path="usuarios" element={<UsuariosPage />} />
             <Route path="roles" element={<RolesPage />} />
             <Route path="permisos" element={<PermisosPage />} />
+            <Route path="asignar-permisos" element={<AsignarPermisosPage />} />
 
-            {/* 🔹 Auditoría */}
+            {/* 🔐 Auditoría y seguridad */}
             <Route path="auditoria" element={<HistorialAlertasPage />} />
+            <Route path="auditoria/detalle/:id" element={<DetalleComparativaPage />} />
 
-            {/* 🔹 Configuración del sistema */}
+            {/* 🧩 Ventas */}
+            <Route path="ventas/diarias" element={<VentasDiariasPage />} />
+            <Route path="ventas/mensuales" element={<VentasMensualesPage />} />
+            <Route path="ventas/semanales" element={<VentasSemanalesPage />} />
+
+            {/* 🛠 Configuración */}
             <Route path="configuracion" element={<ConfiguracionPage />} />
 
-            {/* 🔹 Soporte */}
+            {/* 📞 Soporte */}
             <Route path="soporte" element={<SoportePage />} />
 
-            {/* 🔹 Cualquier ruta desconocida vuelve al dashboard */}
+            {/* ❓ Default fallback */}
             <Route path="*" element={<Navigate to="dashboard" replace />} />
         </Routes>
     );
