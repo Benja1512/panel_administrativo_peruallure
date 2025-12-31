@@ -4,9 +4,9 @@ import ExportToolbar from '../../../components/superadmin/analytics/ExportToolba
 
 // 📌 Indicadores Clásicos
 import KPIs from '../../../components/superadmin/analytics/KPIs';
-import FacturacionMensual from '../../../components/superadmin/analytics/FacturacionMensual';
-import MRRmensual from '../../../components/superadmin/analytics/MRRmensual';
-import TopProductos from '../../../components/superadmin/analytics/TopProductos';
+import FacturacionMensual from '../../../components/superadmin/analytics/analyticsClasicos/facturacion/FacturacionMensual';
+import MRRmensual from '../../../components/superadmin/analytics/analyticsClasicos/mrrMensual/MRRmensual';
+import TopProductos from '../../../components/superadmin/analytics/analyticsClasicos/topProductos/TopProductos';
 import ClientesTopLTV from '../../../components/superadmin/analytics/ClientesTopLTV';
 
 // 📌 Predicción & IA

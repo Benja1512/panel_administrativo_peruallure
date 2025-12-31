@@ -27,6 +27,13 @@ import VentasDiariasPage from "../pages/superadmin/VentasDiariasPage";
 import VentasMensualesPage from "../pages/superadmin/VentasMensualesPage";
 import VentasSemanalesPage from "../pages/superadmin/VentasSemanalesPage";
 
+/* 💸 📌 FACTURACIÓN (AGREGADO) */
+import FacturacionPage from "../pages/superadmin/analytics/analyticsclasicos/facturacion/FacturacionPage";
+import FacturacionMensualPage from "../pages/superadmin/analytics/analyticsclasicos/facturacion/FacturacionMensualPage";
+import FacturacionDiaria from "../pages/superadmin/analytics/analyticsclasicos/facturacion/FacturacionDiaria";
+import Facturacion5AniosPage from "../pages/superadmin/analytics/analyticsclasicos/facturacion/Facturacion5AniosPage";
+
+
 const SuperAdminRoutes = () => {
     return (
         <Routes>
@@ -55,6 +62,12 @@ const SuperAdminRoutes = () => {
             <Route path="ventas/mensuales" element={<VentasMensualesPage />} />
             <Route path="ventas/semanales" element={<VentasSemanalesPage />} />
 
+            {/* 💸 FACTURACIÓN - (AGREGADO) */}
+            <Route path="facturacion" element={<FacturacionPage />} />
+            <Route path="facturacion/mensual" element={<FacturacionMensualPage />} />
+            <Route path="facturacion/diaria" element={<FacturacionDiaria />} />
+            <Route path="facturacion/5anios" element={<Facturacion5AniosPage />} />
+
             {/* 🛠 Configuración */}
             <Route path="configuracion" element={<ConfiguracionPage />} />
 
@@ -63,6 +76,7 @@ const SuperAdminRoutes = () => {
 
             {/* ❓ Default fallback */}
             <Route path="*" element={<Navigate to="dashboard" replace />} />
+
         </Routes>
     );
 };

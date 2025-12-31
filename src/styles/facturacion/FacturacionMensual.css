@@ -1,0 +1,56 @@
+.facturacion-diaria-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    margin: 35px 0;
+    border-left: 6px solid #d60000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.facturacion-diaria-card h2 {
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.facturacion-resumen {
+    display: flex;
+    justify-content: space-between;
+    background: #ffecec;
+    padding: 10px 18px;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.facturacion-item strong {
+    color: #8c0000;
+}
+
+.grid-dias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+}
+
+/* ⭐ ESTILO DE TARJETAS */
+.grid-item {
+    background: #fafafa;
+    padding: 14px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid #e5e5e5;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+/* ⭐ HOVER PRO QUE TE FALTABA */
+.grid-item:hover {
+    background: #ffefef;
+    transform: scale(1.05);
+    border-color: #d60000;
+    box-shadow: 0 4px 12px rgba(214, 0, 0, 0.25);
+    color: #700000;
+}

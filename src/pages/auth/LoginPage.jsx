@@ -3,8 +3,8 @@ import LoginForm from "../../components/auth/LoginForm";
 import "../../styles/AuthForms.css";
 
 const roles = [
+    { key: "superadmin", label: "Super Administrador" },
     { key: "admin", label: "Administrador" },
-    { key: "superadmin", label: "Super Admin" },
     { key: "gestor", label: "Gestor" },
     { key: "vendedor", label: "Vendedor" },
     { key: "cliente", label: "Cliente" },
