@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../styles/facturacion/Comparativa5Anios.css";
+import "../../../../../styles/facturacion/Comparativa5Anios.css";
 
 /* 📊 Facturación total por año */
 const datos = [

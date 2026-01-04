@@ -29,8 +29,10 @@ import VentasSemanalesPage from "../pages/superadmin/VentasSemanalesPage";
 
 /* 💸 📌 FACTURACIÓN (AGREGADO) */
 import FacturacionPage from "../pages/superadmin/analytics/analyticsclasicos/facturacion/FacturacionPage";
-import FacturacionMensualPage from "../pages/superadmin/analytics/analyticsclasicos/facturacion/FacturacionMensualPage";
 import FacturacionDiaria from "../pages/superadmin/analytics/analyticsclasicos/facturacion/FacturacionDiaria";
+import FacturacionMensualPage from "../pages/superadmin/analytics/analyticsclasicos/facturacion/FacturacionMensualPage";
+import FacturacionAnualPage from "../pages/superadmin/analytics/analyticsclasicos/facturacion/FacturacionAnualPage";
+
 import Facturacion5AniosPage from "../pages/superadmin/analytics/analyticsclasicos/facturacion/Facturacion5AniosPage";
 
 
@@ -64,8 +66,9 @@ const SuperAdminRoutes = () => {
 
             {/* 💸 FACTURACIÓN - (AGREGADO) */}
             <Route path="facturacion" element={<FacturacionPage />} />
-            <Route path="facturacion/mensual" element={<FacturacionMensualPage />} />
             <Route path="facturacion/diaria" element={<FacturacionDiaria />} />
+            <Route path="facturacion/mensual" element={<FacturacionMensualPage />} />
+            <Route path="facturacion/anual" element={<FacturacionAnualPage />} />
             <Route path="facturacion/5anios" element={<Facturacion5AniosPage />} />
 
             {/* 🛠 Configuración */}

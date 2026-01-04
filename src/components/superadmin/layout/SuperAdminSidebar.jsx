@@ -42,6 +42,7 @@ const SuperAdminSidebar = () => {
                     <NavLink to="/superadmin/configuracion" className="sidebar-item">⚙️ Configuración</NavLink>
                     <NavLink to="/superadmin/soporte" className="sidebar-item">🆘 Soporte Técnico</NavLink>
 
+                    
                     {/* 🚧 Próximamente */}
                     <div className="sidebar-item disabled">🏢 Empresas (Próximamente)</div>
 

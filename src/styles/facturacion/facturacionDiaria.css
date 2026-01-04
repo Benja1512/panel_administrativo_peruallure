@@ -1,0 +1,50 @@
+.tabla-diaria-container {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.tabla-diaria-container h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.resumen-diario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f9fc;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1a237e;
+    border: 1px solid #e0e0e0;
+}
+
+.tabla-diaria {
+    border-top: 1px solid #eee;
+    margin-top: 1rem;
+}
+
+.fila-dia {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.fila-dia:hover {
+    background-color: #f5f5f5;
+}
+
+.pagina-facturacion {
+    padding: 2rem;
+}
