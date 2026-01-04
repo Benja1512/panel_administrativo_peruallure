@@ -10,8 +10,8 @@ import TopProductos from '../../../components/superadmin/analytics/analyticsClas
 import ClientesTopLTV from '../../../components/superadmin/analytics/ClientesTopLTV';
 
 // 📌 Predicción & IA
-import PrediccionVentas from '../../../components/superadmin/analytics/PrediccionVentas';
-import DesviacionForecast from '../../../components/superadmin/analytics/DesviacionForecast';
+import PrediccionVentas from '../../../components/superadmin/analytics/analyticsIA/PrediccionVentas';
+import DesviacionForecast from '../../../components/superadmin/analytics/analyticsIA/DesviacionForecast';
 import ForecastStockCritico from '../../../components/superadmin/analytics/ForecastStockCritico';
 
 // 📌 Logística & Supply Chain

@@ -1,0 +1,94 @@
+.panel-card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.panel-card h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.panel-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.grid > div {
+    border-radius: 0.75rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.grid > div h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.grid > div p {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.bg-blue-50 {
+    background-color: #e0ecff;
+    color: #1d4ed8;
+}
+
+.bg-green-50 {
+    background-color: #e8fef2;
+    color: #047857;
+}
+
+.bg-red-50 {
+    background-color: #ffe5e5;
+    color: #b91c1c;
+}
+
+.bg-gray-100 {
+    background-color: #f3f4f6;
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+}
+
+ul.list-disc {
+    padding-left: 1rem;
+    font-size: 0.92rem;
+    color: #333;
+}
+
+ul.list-disc li {
+    margin-bottom: 0.5rem;
+}
+
+ul.list-disc span {
+    font-weight: 600;
+}
+
+button {
+    background-color: #2563eb;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}

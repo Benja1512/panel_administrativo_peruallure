@@ -1,0 +1,76 @@
+/* ⚠️ Forecast de Stock Crítico */
+
+.card-content > div:first-child h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1F2937;
+}
+
+.card-content > div:first-child svg {
+    color: #F59E0B;
+    margin-right: 0.5rem;
+}
+
+/* Descripción */
+.card-content > p {
+    color: #4B5563;
+    margin-bottom: 1.5rem;
+}
+
+/* Tabla */
+table.w-full.table-auto {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+table.w-full.table-auto thead {
+    background-color: #FEF9C3;
+    color: #78350F;
+}
+
+table.w-full.table-auto th,
+table.w-full.table-auto td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+}
+
+table.w-full.table-auto tbody tr {
+    border-top: 1px solid #FEF3C7;
+}
+
+/* Riesgo */
+td.text-red-600 {
+    color: #DC2626;
+    font-weight: 600;
+}
+
+td.text-yellow-600 {
+    color: #D97706;
+    font-weight: 600;
+}
+
+td.text-orange-600 {
+    color: #EA580C;
+    font-weight: 600;
+}
+
+/* Botón Exportar */
+button.inline-flex.items-center.bg-yellow-500 {
+    background-color: #F59E0B;
+    color: white;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button.inline-flex.items-center.bg-yellow-500:hover {
+    background-color: #D97706;
+}
+
+button.inline-flex.items-center.bg-yellow-500 svg {
+    margin-right: 0.5rem;
+}

@@ -1,0 +1,101 @@
+/* Panel principal */
+.panel-card {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.panel-card h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.panel-card p {
+    color: #4B5563;
+}
+
+/* Métricas */
+.panel-card .grid {
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.panel-card .text-center h4 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.panel-card .text-center p {
+    font-size: 1.25rem;
+}
+
+.bg-blue-100 {
+    background-color: #DBEAFE;
+    color: #1E3A8A;
+}
+
+.bg-green-100 {
+    background-color: #D1FAE5;
+    color: #065F46;
+}
+
+.bg-red-100 {
+    background-color: #FECACA;
+    color: #991B1B;
+}
+
+.bg-yellow-100 {
+    background-color: #FEF9C3;
+    color: #92400E;
+}
+
+.bg-yellow-500 {
+    background-color: #F59E0B;
+}
+
+.bg-yellow-600 {
+    background-color: #D97706;
+}
+
+.text-yellow-800 {
+    color: #854D0E;
+}
+
+.text-blue-700 {
+    color: #1D4ED8;
+}
+
+/* Tabla Stock Crítico */
+.table-auto th,
+.table-auto td {
+    padding: 0.5rem 1rem;
+    text-align: left;
+}
+
+.table-auto thead {
+    background-color: #FEF9C3;
+    color: #78350F;
+}
+
+.table-auto tbody tr {
+    border-top: 1px solid #FEF3C7;
+}
+
+/* Botones */
+button {
+    transition: background-color 0.2s ease-in-out;
+}
+
+button.bg-gray-200:hover {
+    background-color: #E5E7EB;
+}
+
+button.bg-blue-600:hover {
+    background-color: #2563EB;
+}
+
+button.bg-yellow-500:hover {
+    background-color: #D97706;
+}
