@@ -1,0 +1,42 @@
+.comparativa-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 24px;
+    margin-top: 32px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.comparativa-card h2 {
+    margin-bottom: 6px;
+}
+
+.comparativa-card .subtext {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.comparativa-tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparativa-tabla th {
+    text-align: left;
+    padding: 12px;
+    background: #f4f4f4;
+    font-weight: 600;
+}
+
+.comparativa-tabla td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.comparativa-tabla tr:hover {
+    background: #fafafa;
+}
+
+.comparativa-tabla .destacado {
+    background: #fff3cd;
+    font-weight: 600;
+}

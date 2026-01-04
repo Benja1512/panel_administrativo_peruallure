@@ -1,6 +1,20 @@
-import React, { useState } from "react";
-import "../../../../../styles/facturacion/FacturacionMensual.css"
+import React from "react";
+import { Line } from "react-chartjs-2";
+import {
+    Chart as ChartJS,
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    LineElement,
+    Tooltip,
+    Legend
+} from "chart.js";
 
+import "../../../../../styles/facturacion/FacturacionMensual.css";
+
+ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);
+
+/* 🔢 Datos de los 12 meses */
 const datosMensuales = [
     { mes: "Enero", monto: 18250 },
     { mes: "Febrero", monto: 21040 },
@@ -16,35 +30,87 @@ const datosMensuales = [
     { mes: "Diciembre", monto: 32750 },
 ];
 
-const estilos = ["estilo-card", "estilo-linea", "estilo-premium"];
+/* 📌 KPIs */
+const total = datosMensuales.reduce((a, b) => a + b.monto, 0);
+const mejorMes = datosMensuales.reduce((max, m) => m.monto > max.monto ? m : max);
+const peorMes = datosMensuales.reduce((min, m) => m.monto < min.monto ? m : min);
+const ticketPromedio = Math.round(total / 12);
+
+/* 📈 Gráfico */
+const data = {
+    labels: datosMensuales.map(d => d.mes),
+    datasets: [
+        {
+            label: "Facturación Mensual (USD)",
+            data: datosMensuales.map(d => d.monto),
+            borderColor: "#D60000",
+            backgroundColor: "rgba(214,0,0,0.15)",
+            borderWidth: 3,
+            tension: 0.4,
+            fill: true,
+        },
+    ],
+};
+
+const options = {
+    responsive: true,
+    plugins: { legend: { display: false }},
+    scales: {
+        y: {
+            ticks: {
+                callback: v => `USD ${v.toLocaleString()}`
+            }
+        }
+    }
+};
 
 const FacturacionMensual = () => {
-    const [estilo, setEstilo] = useState("estilo-card");
-
     return (
-        <div className="facturacion-bloque">
-            <h2>📅 Facturación Mensual (12 Meses)</h2>
-            <p>Reporte histórico mensual del año en curso.</p>
+        <div className="facturacion-mensual-container">
+            <h1>📅 Facturación Mensual (12 Meses)</h1>
+            <p className="subtitulo">
+                Reporte histórico mensual del año en curso con indicadores clave.
+            </p>
 
-            {/* 🔄 Selector de estilo */}
-            <div className="selector-estilos">
-                {estilos.map(s => (
-                    <button
-                        key={s}
-                        onClick={() => setEstilo(s)}
-                        className={estilo === s ? "btn-active" : ""}
-                    >
-                        {s}
-                    </button>
-                ))}
+            {/* ⭐ KPIs */}
+            <div className="kpi-grid">
+                <div className="kpi-card">
+                    💵 Total Anual
+                    <strong>USD {total.toLocaleString()}</strong>
+                </div>
+
+                <div className="kpi-card">
+                    🏆 Mejor Mes
+                    <strong>{mejorMes.mes} → USD {mejorMes.monto.toLocaleString()}</strong>
+                </div>
+
+                <div className="kpi-card">
+                    ⚠️ Peor Mes
+                    <strong>{peorMes.mes} → USD {peorMes.monto.toLocaleString()}</strong>
+                </div>
+
+                <div className="kpi-card">
+                    📊 Ticket Promedio
+                    <strong>USD {ticketPromedio.toLocaleString()}</strong>
+                </div>
             </div>
 
-            {/* 🧾 Tabla con el estilo dinámico */}
-            <div className={`tabla-mensual ${estilo}`}>
-                {datosMensuales.map((d,i) => (
-                    <div key={i} className="fila-mes">
-                        <span>{d.mes}</span>
-                        <strong>USD {d.monto.toLocaleString()}</strong>
+            {/* 📉 Gráfico */}
+            <div className="chart-box">
+                <Line data={data} options={options} />
+            </div>
+
+            {/* 📦 Detalle mensual */}
+            <h3 className="subtitulo-seccion">🗂 Detalle por Mes</h3>
+            <div className="facturacion-grid">
+                {datosMensuales.map((m, i) => (
+                    <div
+                        key={i}
+                        className={`facturacion-item ${m.mes === mejorMes.mes ? "best" : ""}`}
+                    >
+                        <span>{m.mes}</span>
+                        <span className="separator">|</span>
+                        <strong>USD {m.monto.toLocaleString()}</strong>
                     </div>
                 ))}
             </div>

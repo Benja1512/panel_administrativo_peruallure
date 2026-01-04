@@ -1,0 +1,19 @@
+.comp5-card {
+    background: #fff;
+    padding: 26px;
+    border-radius: 18px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    margin-top: 30px;
+}
+.comp5-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+.comp5-table th, .comp5-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+.positivo { background: #eaffea; color: #146300; font-weight: 700; }
+.negativo { background: #ffe8e8; color: #b30000; font-weight: 700; }
