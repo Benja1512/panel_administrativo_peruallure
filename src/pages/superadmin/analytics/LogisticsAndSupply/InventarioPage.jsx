@@ -1,4 +1,5 @@
-import InventarioActual from "/components/superadmin/analytics/InventarioActual";
+import InventarioActual from "../../../../components/superadmin/analytics/LogisticsAndSupply/inventario/InventarioActual";
+
 
 const InventarioPage = () => {
     return (

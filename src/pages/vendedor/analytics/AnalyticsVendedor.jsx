@@ -2,7 +2,7 @@ import React from "react";
 import '../../../styles/AnalyticsPage.css';
 
 // Componentes específicos para VENDEDOR
-import KPIs from '../../../components/superadmin/analytics/KPIs';
+import KPIs from '../../../components/superadmin/analytics/LogisticsAndSupply/inventario/InventarioKPIs';
 import VentasPorCategoria from '../../../components/superadmin/analytics/VentasPorCategoria';
 import ComparativaVendedores from '../../../components/superadmin/analytics/ComparativaVendedores';
 import ProductividadVendedor from '../../../components/superadmin/analytics/ProductividadVendedor';

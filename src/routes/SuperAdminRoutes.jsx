@@ -27,13 +27,19 @@ import VentasDiariasPage from "../pages/superadmin/VentasDiariasPage";
 import VentasMensualesPage from "../pages/superadmin/VentasMensualesPage";
 import VentasSemanalesPage from "../pages/superadmin/VentasSemanalesPage";
 
-/* 💸 📌 FACTURACIÓN (AGREGADO) */
+/* 📌 FACTURACIÓN (AGREGADO) */
 import FacturacionPage from "../pages/superadmin/analytics/analyticsclasicos/facturacion/FacturacionPage";
 import FacturacionDiaria from "../pages/superadmin/analytics/analyticsclasicos/facturacion/FacturacionDiaria";
 import FacturacionMensualPage from "../pages/superadmin/analytics/analyticsclasicos/facturacion/FacturacionMensualPage";
 import FacturacionAnualPage from "../pages/superadmin/analytics/analyticsclasicos/facturacion/FacturacionAnualPage";
 
 import Facturacion5AniosPage from "../pages/superadmin/analytics/analyticsclasicos/facturacion/Facturacion5AniosPage";
+
+/* 📌 Supply and Chain */
+import InventarioPage from "../pages/superadmin/analytics/LogisticsAndSupply/InventarioPage";
+import ProcesamientoPage from "../pages/superadmin/analytics/LogisticsAndSupply/ProcesamientoPage";
+import RotacionStockPage from "../pages/superadmin/analytics/LogisticsAndSupply/RotacionStockPage";
+
 
 
 const SuperAdminRoutes = () => {
@@ -48,6 +54,13 @@ const SuperAdminRoutes = () => {
 
             {/* 📊 Analytics Global */}
             <Route path="analytics/*" element={<AnalyticsRouter />} />
+
+            {/* LOGÍSTICA */}
+            <Route path="logistica">
+                <Route path="inventario" element={<InventarioPage />} />
+                <Route path="procesamiento" element={<ProcesamientoPage />} />
+                <Route path="rotacion" element={<RotacionStockPage />} />
+            </Route>
 
             {/* 👥 Gestión */}
             <Route path="usuarios" element={<UsuariosPage />} />
@@ -79,6 +92,8 @@ const SuperAdminRoutes = () => {
 
             {/* ❓ Default fallback */}
             <Route path="*" element={<Navigate to="dashboard" replace />} />
+
+
 
         </Routes>
     );

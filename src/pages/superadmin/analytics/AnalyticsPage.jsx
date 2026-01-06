@@ -3,7 +3,7 @@ import '../../../styles/AnalyticsPage.css';
 import ExportToolbar from '../../../components/superadmin/analytics/ExportToolbar';
 
 // 📌 Indicadores Clásicos
-import KPIs from '../../../components/superadmin/analytics/KPIs';
+import KPIs from '../../../components/superadmin/analytics/LogisticsAndSupply/inventario/InventarioKPIs';
 import FacturacionMensual from '../../../components/superadmin/analytics/analyticsClasicos/facturacion/FacturacionMensual';
 import MRRmensual from '../../../components/superadmin/analytics/analyticsClasicos/mrrMensual/MRRmensual';
 import TopProductos from '../../../components/superadmin/analytics/analyticsClasicos/topProductos/TopProductos';
@@ -15,7 +15,7 @@ import DesviacionForecast from '../../../components/superadmin/analytics/analyti
 import ForecastStockCritico from '../../../components/superadmin/analytics/ForecastStockCritico';
 
 // 📌 Logística & Supply Chain
-import InventarioActual from '../../../components/superadmin/analytics/InventarioActual';
+import InventarioActual from '../../../components/superadmin/analytics/LogisticsAndSupply/inventario/InventarioActual';
 import TiempoPromedioEntrega from '../../../components/superadmin/analytics/TiempoPromedioEntrega';
 import TiempoProcesamiento from '../../../components/superadmin/analytics/TiempoProcesamiento';
 import StockVsDemanda from '../../../components/superadmin/analytics/StockVsDemanda';
@@ -69,6 +69,7 @@ import TendenciaMensualVentas from '../../../components/superadmin/analytics/Ten
 import TendenciasPorProducto from '../../../components/superadmin/analytics/TendenciasPorProducto';
 
 import ResumenGeneral from '../../../components/superadmin/analytics/ResumenGeneral';
+import "../../../styles/LogisticsAndSupply/LogisticsAndSupply.css";
 
 const AnalyticsPage = () => {
     return (

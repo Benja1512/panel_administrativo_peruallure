@@ -1,7 +1,7 @@
 import React from "react";
 
 /* 📌 Módulos existentes */
-import KPIs from "../../../../components/superadmin/analytics/KPIs";
+import KPIs from "../../../../components/superadmin/analytics/LogisticsAndSupply/inventario/InventarioKPIs";
 import Facturacion5Anios from "../../../../components/superadmin/analytics/analyticsClasicos/facturacion/Facturacion5Anios";
 
 import FacturacionDiaria from "../../../../components/superadmin/analytics/analyticsClasicos/facturacion/FacturacionDiaria.jsx";

@@ -1,5 +1,5 @@
 import React from "react";
-import InventarioActual from "../../../../components/superadmin/analytics/InventarioActual";
+import InventarioActual from "../../../../components/superadmin/analytics/LogisticsAndSupply/inventario/InventarioActual";
 import TiempoPromedioEntrega from "../../../../components/superadmin/analytics/TiempoPromedioEntrega";
 import TiempoProcesamiento from "../../../../components/superadmin/analytics/TiempoProcesamiento";
 import RotacionStock from "../../../../components/superadmin/analytics/RotacionStock";
