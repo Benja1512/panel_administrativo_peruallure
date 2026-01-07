@@ -8,7 +8,8 @@ import AnalyticsLogistica from "./sections/AnalyticsLogistica";
 import AnalyticsMarketing from "./sections/AnalyticsMarketing";
 import AnalyticsCliente from "./sections/AnalyticsCliente";
 import AnalyticsAvanzado from "./sections/AnalyticsAvanzado";
-import ProcesamientoPage from "./procesamiento/ProcesamientoPage";
+import ProcesamientoPage from "./LogisticsAndSupply/ProcesamientoPage";
+
 import StockPage from "./stock/StockPage";
 
 const AnalyticsRouter = () => {
