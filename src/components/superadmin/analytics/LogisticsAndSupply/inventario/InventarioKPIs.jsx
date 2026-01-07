@@ -11,6 +11,12 @@ const InventarioKPIs = () => {
                 <span className="kpi-value">€248,000</span>
             </div>
 
+            <div className="kpi">
+                <span className="kpi-label">Stock Total</span>
+                <span className="kpi-value">12,480 u</span>
+                <span className="kpi-delta positive">↑ +3.2% vs mes anterior</span>
+            </div>
+
             <div className="kpi success">
                 <span className="kpi-label">Stock Saludable</span>
                 <span className="kpi-value">92%</span>

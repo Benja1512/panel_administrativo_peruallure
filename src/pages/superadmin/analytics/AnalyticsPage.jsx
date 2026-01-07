@@ -17,9 +17,9 @@ import ForecastStockCritico from '../../../components/superadmin/analytics/Forec
 // 📌 Logística & Supply Chain
 import InventarioActual from '../../../components/superadmin/analytics/LogisticsAndSupply/inventario/InventarioActual';
 import TiempoPromedioEntrega from '../../../components/superadmin/analytics/TiempoPromedioEntrega';
-import TiempoProcesamiento from '../../../components/superadmin/analytics/TiempoProcesamiento';
+import TiempoProcesamiento from '../../../components/superadmin/analytics/LogisticsAndSupply/procesamiento/TiempoProcesamiento';
 import StockVsDemanda from '../../../components/superadmin/analytics/StockVsDemanda';
-import RotacionStock from '../../../components/superadmin/analytics/RotacionStock';
+import RotacionStock from "../../../components/superadmin/analytics/LogisticsAndSupply/stock/RotacionStock";
 import CostoLogisticoUnitario from '../../../components/superadmin/analytics/CostoLogisticoUnitario';
 import OrdenesPorEntrega from '../../../components/superadmin/analytics/OrdenesPorEntrega';
 import PedidosPendientesEnTransito from '../../../components/superadmin/analytics/PedidosPendientesEnTransito';
@@ -128,6 +128,7 @@ const AnalyticsPage = () => {
                     <PedidosPorCategoria />
                     <SLACumplimiento />
                 </section>
+
 
                 <section id="marketing" className="analytics-section">
                     <h2>📣 Marketing & Campañas</h2>

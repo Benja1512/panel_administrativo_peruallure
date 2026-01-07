@@ -1,0 +1,39 @@
+.tabla-criticos {
+    overflow-x: auto;
+}
+
+.tabla-criticos table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.tabla-criticos th {
+    text-align: left;
+    padding: 10px;
+    color: #475569;
+    font-weight: 600;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.tabla-criticos td {
+    padding: 10px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.stock-actual {
+    font-weight: 700;
+    color: #dc2626;
+}
+
+.estado {
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.estado.critico {
+    background: #fee2e2;
+    color: #b91c1c;
+}

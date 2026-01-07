@@ -1,4 +1,4 @@
-import RotacionStock from "../../../../components/superadmin/analytics/LogisticsAndSupply/RotacionStock";
+import RotacionStock from "../../../../components/superadmin/analytics/LogisticsAndSupply/stock/RotacionStock";
 
 const RotacionStockPage = () => {
     return (

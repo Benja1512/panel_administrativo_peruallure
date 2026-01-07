@@ -8,6 +8,8 @@ import AnalyticsLogistica from "./sections/AnalyticsLogistica";
 import AnalyticsMarketing from "./sections/AnalyticsMarketing";
 import AnalyticsCliente from "./sections/AnalyticsCliente";
 import AnalyticsAvanzado from "./sections/AnalyticsAvanzado";
+import ProcesamientoPage from "./procesamiento/ProcesamientoPage";
+import StockPage from "./stock/StockPage";
 
 const AnalyticsRouter = () => {
     return (
@@ -22,6 +24,8 @@ const AnalyticsRouter = () => {
             <Route path="marketing" element={<AnalyticsMarketing />} />
             <Route path="cliente" element={<AnalyticsCliente />} />
             <Route path="avanzado" element={<AnalyticsAvanzado />} />
+            <Route path="procesamiento" element={<ProcesamientoPage />} />
+            <Route path="stock" element={<StockPage />} />
 
             {/* Si escriben algo mal, redirige a analytics */}
             <Route path="*" element={<Navigate to="/superadmin/analytics" replace />} />
