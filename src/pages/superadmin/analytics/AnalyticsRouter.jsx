@@ -54,6 +54,8 @@ import TasaRecompraPage from "./marketing/TasaRecompraPage";
 import VentasPorCategoriaPage from "./marketing/VentasPorCategoriaPage";
 import TopProductosPage from "./marketing/TopProductosPage";
 import ClientesNuevosVsRecurrentesPage from "./marketing/ClientesNuevosVsRecurrentesPage";
+import CLV_LTVPage from "./marketing/CLV_LTVPage";
+import CohortesRecompraPage from "./marketing/CohortesRecompraPage";
 
 
 
@@ -117,7 +119,9 @@ const AnalyticsRouter = () => {
                 <Route path="tasa-recompra" element={<TasaRecompraPage />} />
                 <Route path="ventas-por-categoria" element={<VentasPorCategoriaPage />} />
                 <Route path="top-productos" element={<TopProductosPage />} />
-                <Route path="clientes-nuevos-vs-recurrentes" element={<ClientesNuevosVsRecurrentesPage /> />
+                <Route path="clientes-nuevos-vs-recurrentes" element={<ClientesNuevosVsRecurrentesPage /> } />
+                <Route path="clv-ltv" element={<CLV_LTVPage />} />
+                <Route path="cohortes-recompra" element={<CohortesRecompraPage />} />
 
             </Routes>
 

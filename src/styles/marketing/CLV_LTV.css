@@ -1,0 +1,39 @@
+.clv-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.clv-kpis {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 16px;
+}
+
+.kpi {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    padding: 16px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.kpi-label {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.kpi-value {
+    margin-top: 8px;
+    display: block;
+    font-size: 1.45rem;
+    font-weight: 650;
+    color: #e5e7eb;
+}
+
+.kpi-value.positivo {
+    color: #4ade80;
+}
