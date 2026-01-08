@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../../../styles/TopProductos.css";
+import "../../../../../styles/marketing/TopProductos.css";
 
 /* 🔝 Datos de 12 productos más vendidos */
 const productos = [

@@ -41,15 +41,20 @@ import SatisfaccionClientePage from "./marketing/SatisfaccionClientePage";
 import SentimientoResenasPage from "./marketing/SentimientoResenasPage";
 import PanelVariacionMensualPage from "./marketing/PanelVariacionMensualPage";
 import CanalesContactoPreferidosPage from "./marketing/CanalesContactoPreferidosPage";
-import ChurnClientesPage from "../../../pages/superadmin/analytics/marketing/ChurnClientesPage";
-import EmbudoConversionPage from "../../../pages/superadmin/analytics/marketing/EmbudoConversionPage";
-import FrecuenciaCompraPromedioPage from "../../../pages/superadmin/analytics/marketing/FrecuenciaCompraPromedioPage";
-import PanelVariacionMensualPage from "../../../pages/superadmin/analytics/marketing/PanelVariacionMensualPage";
-import RentabilidadCanalPage from "../../../pages/superadmin/analytics/marketing/RentabilidadCanalPage";
-import ROICampaniasPage from "../../../pages/superadmin/analytics/marketing/ROICampaniasPage";
-import SatisfaccionClientePage from "../../../pages/superadmin/analytics/marketing/SatisfaccionClientePage";
-import SegmentosClientesPage from "../../../pages/superadmin/analytics/marketing/SegmentosClientesPage";
-import SentimientoResenasPage from "../../../pages/superadmin/analytics/marketing/SentimientoResenasPage";
+import ChurnClientesPage from "./marketing/ChurnClientesPage";
+import EmbudoConversionPage from "./marketing/EmbudoConversionPage";
+import FrecuenciaCompraPromedioPage from "./marketing/FrecuenciaCompraPromedioPage";
+import PanelVariacionMensualPage from "./marketing/PanelVariacionMensualPage";
+import RentabilidadCanalPage from "./marketing/RentabilidadCanalPage";
+import ROICampaniasPage from "./marketing/ROICampaniasPage";
+import SatisfaccionClientePage from "./marketing/SatisfaccionClientePage";
+import SegmentosClientesPage from "./marketing/SegmentosClientesPage";
+import SentimientoResenasPage from "./marketing/SentimientoResenasPage";
+import TasaRecompraPage from "./marketing/TasaRecompraPage";
+import VentasPorCategoriaPage from "./marketing/VentasPorCategoriaPage";
+import TopProductosPage from "./marketing/TopProductosPage";
+import ClientesNuevosVsRecurrentesPage from "./marketing/ClientesNuevosVsRecurrentesPage";
+
 
 
 
@@ -108,8 +113,11 @@ const AnalyticsRouter = () => {
                 <Route path="roi-campanias" element={<ROICampaniasPage />} />
                 <Route path="satisfaccion-cliente" element={<SatisfaccionClientePage />} />
                 <Route path="segmentos-clientes" element={<SegmentosClientesPage />} />
-                <Route path="sentimiento-resenas" element={<SentimientoResenasPage />}
-                />
+                <Route path="sentimiento-resenas" element={<SentimientoResenasPage />} />
+                <Route path="tasa-recompra" element={<TasaRecompraPage />} />
+                <Route path="ventas-por-categoria" element={<VentasPorCategoriaPage />} />
+                <Route path="top-productos" element={<TopProductosPage />} />
+                <Route path="clientes-nuevos-vs-recurrentes" element={<ClientesNuevosVsRecurrentesPage /> />
 
             </Routes>
 
