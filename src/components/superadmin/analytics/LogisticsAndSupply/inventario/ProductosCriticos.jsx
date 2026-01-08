@@ -4,7 +4,6 @@ import SectionLayout from "../SectionLayout";
 import "../../../../../styles/ProductosCriticos.css";
 
 const ProductosCriticos = () => {
-    // 🔴 Datos simulados (luego vendrán del backend)
     const productos = [
         { id: 1, nombre: "Producto A", sku: "SKU-001", stock: 8, minimo: 20 },
         { id: 2, nombre: "Producto B", sku: "SKU-014", stock: 5, minimo: 15 },
@@ -20,7 +19,6 @@ const ProductosCriticos = () => {
             description="Listado de productos con stock por debajo del nivel mínimo recomendado."
             icon={<AlertTriangle size={18} />}
         >
-            {/* Tabla */}
             <div className="tabla-criticos">
                 <table>
                     <thead>
@@ -40,9 +38,7 @@ const ProductosCriticos = () => {
                             <td className="stock-actual">{p.stock}</td>
                             <td>{p.minimo}</td>
                             <td>
-                                    <span className="estado critico">
-                                        Crítico
-                                    </span>
+                                <span className="estado critico">Crítico</span>
                             </td>
                         </tr>
                     ))}
@@ -50,10 +46,8 @@ const ProductosCriticos = () => {
                 </table>
             </div>
 
-            {/* Insight */}
             <p className="insight">
-                ⚠️ Se recomienda priorizar reposición inmediata para evitar quiebres de stock
-                y retrasos en pedidos.
+                ⚠️ Se recomienda priorizar reposición inmediata para evitar quiebres de stock y retrasos en pedidos.
             </p>
         </SectionLayout>
     );

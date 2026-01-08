@@ -1,5 +1,5 @@
 import React from "react";
-import ComparativaVendedores from "../../../../components/superadmin/analytics/ComparativaVendedores";
+import ComparativaVendedores from "../../../../components/superadmin/analytics/marketing/ComparativaVendedores";
 import ValorPromedioPedido from "../../../../components/superadmin/analytics/ValorPromedioPedido";
 import ProductividadVendedor from "../../../../components/superadmin/analytics/ProductividadVendedor";
 

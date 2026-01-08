@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/DashboardSuperAdminPage.css";
+import AlertaGlobalProductosCriticos from "../../components/shared/AlertaGlobalProductosCriticos";
 
 const DashboardSuperAdminPage = () => {
     return (
@@ -12,6 +13,7 @@ const DashboardSuperAdminPage = () => {
                 Panel de control global del sistema
             </p>
 
+            {/* 📊 KPIs principales */}
             <div className="dashboard-grid">
                 <div className="dashboard-card">
                     <h3>Usuarios Totales</h3>
@@ -34,6 +36,10 @@ const DashboardSuperAdminPage = () => {
                 </div>
             </div>
 
+            {/* 🚨 Alerta Global de Productos Críticos */}
+            <AlertaGlobalProductosCriticos />
+
+            {/* 📝 Información adicional */}
             <div className="dashboard-info">
                 <p>
                     Desde este panel puedes supervisar usuarios, roles, permisos,

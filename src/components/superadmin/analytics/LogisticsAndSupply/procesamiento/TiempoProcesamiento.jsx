@@ -1,30 +1,19 @@
-import { Clock } from "lucide-react";
-import SectionLayout from "../SectionLayout";
+import { useNavigate } from "react-router-dom";
+import KpiCard from '../../../../../components/shared/KpiCard';
 
-const TiempoProcesamiento = () => {
+const TiempoProcesamientoKPI = () => {
+    const navigate = useNavigate();
+
     return (
-        <SectionLayout
+        <KpiCard
             title="Tiempo de Procesamiento"
-            description="Duración promedio desde la orden hasta la preparación."
-            icon={<Clock size={18} />}
-        >
-            <div className="kpi-grid">
-                <div className="kpi">
-                    <span className="kpi-label">Tiempo Promedio</span>
-                    <span className="kpi-value">2.3 hrs</span>
-                </div>
-
-                <div className="kpi">
-                    <span className="kpi-label">Órdenes Retrasadas</span>
-                    <span className="kpi-value warning">4%</span>
-                </div>
-            </div>
-
-            <div className="placeholder">
-                📊 Aquí irá el gráfico de tiempos
-            </div>
-        </SectionLayout>
+            value="2.3 hrs"
+            sub="Órdenes logísticas"
+            onClick={() =>
+                navigate("/superadmin/analytics/procesamiento")
+            }
+        />
     );
 };
 
-export default TiempoProcesamiento;
+export default TiempoProcesamientoKPI;

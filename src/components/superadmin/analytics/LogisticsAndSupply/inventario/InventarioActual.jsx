@@ -1,9 +1,10 @@
-import EstadoStock from "./EstadoStock";
-import AlertaInventario from "./AlertaInventario";
 import CoberturaInventario from "./CoberturaInventario";
-import MovimientoInventario from "./MovimientoInventario";
-import RotacionResumen from "./RotacionResumen";
+import EstadoStock from "./EstadoStock";
 import InventarioKPIs from "./InventarioKPIs";
+import MovimientoInventario from "./MovimientoInventario";
+import ProductosCriticos from "./ProductosCriticos";
+import RotacionResumen from "./RotacionResumen";
+
 
 const InventarioActual = () => {
     return (
@@ -22,7 +23,7 @@ const InventarioActual = () => {
             <EstadoStock />
 
             {/* 3️⃣ ALERTA RESUMIDA DE INVENTARIO CRÍTICO */}
-            <AlertaInventario />
+            < ProductosCriticos/>
 
             {/* 4️⃣ COBERTURA DE INVENTARIO */}
             <CoberturaInventario />

@@ -1,7 +1,7 @@
 import React from "react";
-import CalendarioCampanias from "../../../../components/superadmin/analytics/CalendarioCampanias";
-import ROIcampanias from "../../../../components/superadmin/analytics/ROIcampanias";
-import CAC_CostoAdquisicionCliente from "../../../../components/superadmin/analytics/CAC_CostoAdquisicionCliente";
+import CalendarioCampanias from "../../../../components/superadmin/analytics/marketing/CalendarioCampanias";
+import ROIcampanias from "../../../../components/superadmin/analytics/marketing/ROIcampanias";
+import CAC_CostoAdquisicionCliente from "../../../../components/superadmin/analytics/marketing/CAC_CostoAdquisicionCliente";
 
 const AnalyticsMarketing = () => (
     <div className="analytics-page-container">

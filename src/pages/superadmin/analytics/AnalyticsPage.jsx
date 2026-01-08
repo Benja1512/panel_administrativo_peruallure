@@ -1,4 +1,6 @@
 import React from 'react';
+import { Outlet } from "react-router-dom";
+
 import '../../../styles/AnalyticsPage.css';
 import ExportToolbar from '../../../components/superadmin/analytics/ExportToolbar';
 
@@ -25,12 +27,14 @@ import OrdenesPorEntrega from '../../../components/superadmin/analytics/OrdenesP
 import PedidosPendientesEnTransito from '../../../components/superadmin/analytics/PedidosPendientesEnTransito';
 import PedidosPorCategoria from '../../../components/superadmin/analytics/PedidosPorCategoria';
 import SLACumplimiento from '../../../components/superadmin/analytics/SLACumplimiento';
+import AlertaProductosCriticos  from '../../../components/superadmin/analytics/LogisticsAndSupply/stock/AlertaProductosCriticos';
+
 
 // 📌 Marketing
-import CalendarioCampanias from '../../../components/superadmin/analytics/CalendarioCampanias';
-import ROIcampanias from '../../../components/superadmin/analytics/ROIcampanias';
-import CAC_CostoAdquisicionCliente from '../../../components/superadmin/analytics/CAC_CostoAdquisicionCliente';
-import PanelVariacionMensual from '../../../components/superadmin/analytics/PanelVariacionMensual';
+import CalendarioCampanias from '../../../components/superadmin/analytics/marketing/CalendarioCampanias';
+import ROIcampanias from '../../../components/superadmin/analytics/marketing/ROIcampanias';
+import CAC_CostoAdquisicionCliente from '../../../components/superadmin/analytics/marketing/CAC_CostoAdquisicionCliente';
+import PanelVariacionMensual from '../../../components/superadmin/analytics/marketing/PanelVariacionMensual';
 
 // 📌 Cliente
 import SatisfaccionCliente from '../../../components/superadmin/analytics/SatisfaccionCliente';
@@ -49,7 +53,7 @@ import HistorialEventos from '../../../components/superadmin/analytics/Historial
 // 📌 Análisis Avanzado
 import EmbudoConversion from '../../../components/superadmin/analytics/EmbudoConversion';
 import HorasDiasConMasVentas from '../../../components/superadmin/analytics/HorasDiasConMasVentas';
-import ComparativaVendedores from '../../../components/superadmin/analytics/ComparativaVendedores';
+import ComparativaVendedores from '../../../components/superadmin/analytics/marketing/ComparativaVendedores';
 import ValorPromedioPedido from '../../../components/superadmin/analytics/ValorPromedioPedido';
 import RentabilidadPorCanal from '../../../components/superadmin/analytics/RentabilidadPorCanal';
 import FiltrosDinamicos from '../../../components/superadmin/analytics/FiltrosDinamicos';
@@ -64,7 +68,7 @@ import DevolucionesCancelaciones from '../../../components/superadmin/analytics/
 import HorasPicoVentas from '../../../components/superadmin/analytics/HorasPicoVentas';
 import ProductividadVendedor from '../../../components/superadmin/analytics/ProductividadVendedor';
 import IndicadorCumplimiento from '../../../components/superadmin/analytics/IndicadorCumplimiento';
-import VentasPorCategoria from '../../../components/superadmin/analytics/VentasPorCategoria';
+import VentasPorCategoria from '../../../components/superadmin/analytics/marketing/VentasPorCategoria';
 import TendenciaMensualVentas from '../../../components/superadmin/analytics/TendenciaMensualVentas';
 import TendenciasPorProducto from '../../../components/superadmin/analytics/TendenciasPorProducto';
 
@@ -127,6 +131,9 @@ const AnalyticsPage = () => {
                     <PedidosPendientesEnTransito />
                     <PedidosPorCategoria />
                     <SLACumplimiento />
+
+
+
                 </section>
 
 
@@ -181,6 +188,7 @@ const AnalyticsPage = () => {
                 </section>
 
             </div>
+            <Outlet />
         </>
     );
 };
