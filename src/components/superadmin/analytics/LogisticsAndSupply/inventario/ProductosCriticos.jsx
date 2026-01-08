@@ -1,6 +1,6 @@
 import React from "react";
 import { AlertTriangle } from "lucide-react";
-import SectionLayout from "../SectionLayout";
+import SectionLayout from "../../../../shared/SectionLayout";
 import "../../../../../styles/ProductosCriticos.css";
 
 const ProductosCriticos = () => {

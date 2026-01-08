@@ -1,0 +1,35 @@
+.frecuencia-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.frecuencia-kpis {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.kpi {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.kpi-label {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.kpi-value {
+    display: block;
+    margin-top: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4ade80;
+}

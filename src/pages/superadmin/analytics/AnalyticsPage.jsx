@@ -9,7 +9,7 @@ import KPIs from '../../../components/superadmin/analytics/LogisticsAndSupply/in
 import FacturacionMensual from '../../../components/superadmin/analytics/analyticsClasicos/facturacion/FacturacionMensual';
 import MRRmensual from '../../../components/superadmin/analytics/analyticsClasicos/mrrMensual/MRRmensual';
 import TopProductos from '../../../components/superadmin/analytics/analyticsClasicos/topProductos/TopProductos';
-import ClientesTopLTV from '../../../components/superadmin/analytics/ClientesTopLTV';
+import ClientesTopLTV from '../../../components/superadmin/analytics/marketing/ClientesTopLTV';
 
 // 📌 Predicción & IA
 import PrediccionVentas from '../../../components/superadmin/analytics/analyticsIA/PrediccionVentas';
@@ -37,32 +37,32 @@ import CAC_CostoAdquisicionCliente from '../../../components/superadmin/analytic
 import PanelVariacionMensual from '../../../components/superadmin/analytics/marketing/PanelVariacionMensual';
 
 // 📌 Cliente
-import SatisfaccionCliente from '../../../components/superadmin/analytics/SatisfaccionCliente';
-import SentimientoResenas from '../../../components/superadmin/analytics/SentimientoResenas';
-import CanalOrigenClientes from '../../../components/superadmin/analytics/CanalOrigenClientes';
-import CanalesContactoPreferidos from '../../../components/superadmin/analytics/CanalesContactoPreferidos';
-import ClientesNuevosVsRecurrentes from '../../../components/superadmin/analytics/ClientesNuevosVsRecurrentes';
-import TasaRecompra from '../../../components/superadmin/analytics/TasaRecompra';
-import ChurnClientes from '../../../components/superadmin/analytics/ChurnClientes';
-import SegmentosClientes from '../../../components/superadmin/analytics/SegmentosClientes';
+import SatisfaccionCliente from '../../../components/superadmin/analytics/marketing/SatisfaccionCliente';
+import SentimientoResenas from '../../../components/superadmin/analytics/marketing/SentimientoResenas';
+import CanalOrigenClientes from '../../../components/superadmin/analytics/marketing/CanalOrigenClientes';
+import CanalesContactoPreferidos from '../../../components/superadmin/analytics/marketing/CanalesContactoPreferidos';
+import ClientesNuevosVsRecurrentes from '../../../components/superadmin/analytics/marketing/ClientesNuevosVsRecurrentes';
+import TasaRecompra from '../../../components/superadmin/analytics/marketing/TasaRecompra';
+import ChurnClientes from '../../../components/superadmin/analytics/marketing/ChurnClientes';
+import SegmentosClientes from '../../../components/superadmin/analytics/marketing/SegmentosClientes';
 
 // 📌 Alertas & Eventos
 import AlertasAnomalias from '../../../components/superadmin/analytics/AlertasAnomalias';
 import HistorialEventos from '../../../components/superadmin/analytics/HistorialEventos';
 
 // 📌 Análisis Avanzado
-import EmbudoConversion from '../../../components/superadmin/analytics/EmbudoConversion';
+import EmbudoConversion from '../../../components/superadmin/analytics/marketing/EmbudoConversion';
 import HorasDiasConMasVentas from '../../../components/superadmin/analytics/HorasDiasConMasVentas';
 import ComparativaVendedores from '../../../components/superadmin/analytics/marketing/ComparativaVendedores';
 import ValorPromedioPedido from '../../../components/superadmin/analytics/ValorPromedioPedido';
-import RentabilidadPorCanal from '../../../components/superadmin/analytics/RentabilidadPorCanal';
+import RentabilidadPorCanal from '../../../components/superadmin/analytics/marketing/RentabilidadPorCanal';
 import FiltrosDinamicos from '../../../components/superadmin/analytics/FiltrosDinamicos';
 import CumplimientoObjetivos from '../../../components/superadmin/analytics/CumplimientoObjetivos';
 import CicloVentaPromedio from '../../../components/superadmin/analytics/CicloVentaPromedio';
 import IngresosYMargenes from '../../../components/superadmin/analytics/IngresosYMargenes';
 import IngresosPorRegion from '../../../components/superadmin/analytics/IngresosPorRegion';
 import IngresosMargenPorProducto from '../../../components/superadmin/analytics/IngresosMargenPorProducto';
-import FrecuenciaCompraPromedio from '../../../components/superadmin/analytics/FrecuenciaCompraPromedio';
+import FrecuenciaCompraPromedio from '../../../components/superadmin/analytics/marketing/FrecuenciaCompraPromedio';
 import GraficoComparativo from '../../../components/superadmin/analytics/GraficoComparativo';
 import DevolucionesCancelaciones from '../../../components/superadmin/analytics/DevolucionesCancelaciones';
 import HorasPicoVentas from '../../../components/superadmin/analytics/HorasPicoVentas';

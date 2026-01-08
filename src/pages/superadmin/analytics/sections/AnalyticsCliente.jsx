@@ -1,7 +1,7 @@
 import React from "react";
-import SatisfaccionCliente from "../../../../components/superadmin/analytics/SatisfaccionCliente";
-import TasaRecompra from "../../../../components/superadmin/analytics/TasaRecompra";
-import ChurnClientes from "../../../../components/superadmin/analytics/ChurnClientes";
+import SatisfaccionCliente from "../../../../components/superadmin/analytics/marketing/SatisfaccionCliente";
+import TasaRecompra from "../../../../components/superadmin/analytics/marketing/TasaRecompra";
+import ChurnClientes from "../../../../components/superadmin/analytics/marketing/ChurnClientes";
 
 const AnalyticsCliente = () => (
     <div className="analytics-page-container">

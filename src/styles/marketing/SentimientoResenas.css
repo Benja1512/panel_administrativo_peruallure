@@ -1,0 +1,61 @@
+.sentimiento-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.sentimiento-kpis {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 16px;
+}
+
+.kpi {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    padding: 16px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.kpi-label {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.kpi-value {
+    display: block;
+    margin-top: 8px;
+    font-size: 1.45rem;
+    font-weight: 650;
+    color: #e5e7eb;
+}
+
+.kpi-value.positivo {
+    color: #4ade80;
+}
+
+.kpi-value.negativo {
+    color: #f87171;
+}
+
+.sentimiento-grafico {
+    background: rgba(15, 23, 42, 0.55);
+    border-radius: 16px;
+    padding: 16px 10px 6px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.3);
+}
+
+.sentimiento-insights {
+    background: rgba(17, 24, 39, 0.55);
+    border-radius: 14px;
+    padding: 14px 18px;
+    border: 1px dashed rgba(255, 255, 255, 0.12);
+    color: #d1d5db;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
