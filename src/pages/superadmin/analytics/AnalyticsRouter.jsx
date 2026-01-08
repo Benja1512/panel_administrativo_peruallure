@@ -36,26 +36,20 @@ import RentabilidadCanalPage from "./marketing/RentabilidadCanalPage";
 import SegmentosClientesPage from "./marketing/SegmentosClientesPage";
 import CanalOrigenClientesPage from "./marketing/CanalOrigenClientesPage";
 import TasaRecompraPage from "./marketing/TasaRecompraPage";
-import ChurnClientesPage from "./marketing/ChurnClientesPage";
 import SatisfaccionClientePage from "./marketing/SatisfaccionClientePage";
 import SentimientoResenasPage from "./marketing/SentimientoResenasPage";
 import PanelVariacionMensualPage from "./marketing/PanelVariacionMensualPage";
-import CanalesContactoPreferidosPage from "./marketing/CanalesContactoPreferidosPage";
+import CanalesContactoPreferidosPage from "./marketing/ComparativaVendedores";
 import ChurnClientesPage from "./marketing/ChurnClientesPage";
-import EmbudoConversionPage from "./marketing/EmbudoConversionPage";
-import FrecuenciaCompraPromedioPage from "./marketing/FrecuenciaCompraPromedioPage";
-import PanelVariacionMensualPage from "./marketing/PanelVariacionMensualPage";
-import RentabilidadCanalPage from "./marketing/RentabilidadCanalPage";
-import ROICampaniasPage from "./marketing/ROICampaniasPage";
-import SatisfaccionClientePage from "./marketing/SatisfaccionClientePage";
-import SegmentosClientesPage from "./marketing/SegmentosClientesPage";
-import SentimientoResenasPage from "./marketing/SentimientoResenasPage";
-import TasaRecompraPage from "./marketing/TasaRecompraPage";
 import VentasPorCategoriaPage from "./marketing/VentasPorCategoriaPage";
 import TopProductosPage from "./marketing/TopProductosPage";
 import ClientesNuevosVsRecurrentesPage from "./marketing/ClientesNuevosVsRecurrentesPage";
 import CLV_LTVPage from "./marketing/CLV_LTVPage";
 import CohortesRecompraPage from "./marketing/CohortesRecompraPage";
+import ComparativaVendedoresPage from "./marketing/ComparativaVendedoresPage";
+
+
+import ClientesTopLTVPage from "./marketing/ClientesTopLTVPage";
 
 
 
@@ -122,6 +116,8 @@ const AnalyticsRouter = () => {
                 <Route path="clientes-nuevos-vs-recurrentes" element={<ClientesNuevosVsRecurrentesPage /> } />
                 <Route path="clv-ltv" element={<CLV_LTVPage />} />
                 <Route path="cohortes-recompra" element={<CohortesRecompraPage />} />
+                <Route path="comparativa-vendedores" element={<ComparativaVendedoresPage />} />
+                <Route path="clientes-top-ltv" element={<ClientesTopLTVPage />} />
 
             </Routes>
 

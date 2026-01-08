@@ -8,7 +8,7 @@ import {
 } from "recharts";
 import SectionLayout from "../../../shared/SectionLayout";
 import { Filter } from "lucide-react";
-import "./EmbudoConversion.css";
+import "../../../../styles/marketing//EmbudoConversion.css";
 
 const data = [
     { stage: "Visitas", value: 12000 },

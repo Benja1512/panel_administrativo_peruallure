@@ -9,7 +9,7 @@ import {
     ResponsiveContainer,
 } from "recharts";
 import SectionLayout from "../../../shared/SectionLayout";
-import "../../../../../../styles/marketing/CanalOrigenClientes.css";
+import "../../../../styles/marketing/CanalOrigenClientes.css";
 
 const datos = [
     { canal: "Redes Sociales", clientes: 120 },

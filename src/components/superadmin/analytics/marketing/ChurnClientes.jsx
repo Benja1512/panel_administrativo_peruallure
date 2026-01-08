@@ -9,7 +9,7 @@ import {
     ResponsiveContainer,
 } from "recharts";
 import SectionLayout from "../../../shared/SectionLayout";
-import "../../../../../../styles/marketing/ChurnClientes.css";
+import "../../../../styles/marketing/ChurnClientes.css";
 
 const data = [
     { mes: "Ene", churn: 4.2 },
