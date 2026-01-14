@@ -1,0 +1,38 @@
+.ticket-table, .ticket-filters, .nuevo-ticket {
+    margin-bottom: 20px;
+    background: var(--bg-card);
+    padding: 16px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+}
+
+.ticket-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ticket-table th,
+.ticket-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 400px;
+}

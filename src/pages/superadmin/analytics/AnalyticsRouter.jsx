@@ -1,32 +1,26 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import AnalyticsPage from "./AnalyticsPage"
+import AnalyticsPage from "./AnalyticsPage";
 
-// 📌 Sub-páginas por categoría
+/* === SECCIONES PRINCIPALES === */
 import AnalyticsClasicos from "./sections/AnalyticsClasicos";
 import AnalyticsIA from "./sections/AnalyticsIA";
 import AnalyticsLogistica from "./sections/AnalyticsLogistica";
 import AnalyticsMarketing from "./sections/AnalyticsMarketing";
 import AnalyticsCliente from "./sections/AnalyticsCliente";
 import AnalyticsAvanzado from "./sections/AnalyticsAvanzado";
+
+/* === LOGÍSTICA === */
 import ProcesamientoPage from "./LogisticsAndSupply/ProcesamientoPage";
-import ProductosCriticosPage from "./stock/ProductosCriticosPage";
-
-
-// 📌 Sub-páginas por stock
-import StockPage from "./stock/StockPage";
-
-
-
-// 📌 Sub-páginas de rotación (CORREGIDO ❗)
 import RotacionStockPage from "./LogisticsAndSupply/RotacionStockPage";
 import RotacionPromedioPage from "./LogisticsAndSupply/rotacion/RotacionPromedioPage";
 import DiasInventarioPage from "./LogisticsAndSupply/rotacion/DiasInventarioPage";
 import StockBajaRotacionPage from "./LogisticsAndSupply/rotacion/StockBajaRotacionPage";
 
+/* === STOCK === */
+import StockPage from "./stock/StockPage";
+import ProductosCriticosPage from "./stock/ProductosCriticosPage";
 
-
-
-// Wrappers de páginas de marketing (NO componentes)
+/* === MARKETING (WRAPPERS) === */
 import MarketingPage from "./marketing/MarketingPage";
 import CalendarioCampaniasPage from "./marketing/CalendarioPage";
 import ROICampaniasPage from "./marketing/ROICampaniasPage";
@@ -39,7 +33,7 @@ import TasaRecompraPage from "./marketing/TasaRecompraPage";
 import SatisfaccionClientePage from "./marketing/SatisfaccionClientePage";
 import SentimientoResenasPage from "./marketing/SentimientoResenasPage";
 import PanelVariacionMensualPage from "./marketing/PanelVariacionMensualPage";
-import CanalesContactoPreferidosPage from "./marketing/ComparativaVendedores";
+import CanalesContactoPreferidosPage from "./marketing/CanalesContactoPreferidosPage";
 import ChurnClientesPage from "./marketing/ChurnClientesPage";
 import VentasPorCategoriaPage from "./marketing/VentasPorCategoriaPage";
 import TopProductosPage from "./marketing/TopProductosPage";
@@ -47,81 +41,69 @@ import ClientesNuevosVsRecurrentesPage from "./marketing/ClientesNuevosVsRecurre
 import CLV_LTVPage from "./marketing/CLV_LTVPage";
 import CohortesRecompraPage from "./marketing/CohortesRecompraPage";
 import ComparativaVendedoresPage from "./marketing/ComparativaVendedoresPage";
-
-
+import FrecuenciaCompraPromedioPage from "./marketing/FrecuenciaCompraPromedioPage";
 import ClientesTopLTVPage from "./marketing/ClientesTopLTVPage";
-
-
-
+import ProductividadVendedor from "../../../components/superadmin/analytics/ProductividadVendedor";
 
 const AnalyticsRouter = () => {
     return (
         <Routes>
-            {/* Ruta por defecto */}
+            {/* ===== ROOT ===== */}
             <Route index element={<AnalyticsPage />} />
 
-            {/* Subrutas */}
+            {/* ===== SECCIONES ===== */}
             <Route path="clasicos" element={<AnalyticsClasicos />} />
             <Route path="ia" element={<AnalyticsIA />} />
             <Route path="logistica" element={<AnalyticsLogistica />} />
             <Route path="marketing" element={<AnalyticsMarketing />} />
             <Route path="cliente" element={<AnalyticsCliente />} />
             <Route path="avanzado" element={<AnalyticsAvanzado />} />
+
+            {/* ===== LOGÍSTICA ===== */}
             <Route path="procesamiento" element={<ProcesamientoPage />} />
-            <Route path="stock" element={<StockPage />} />
-
-            {/* Rotación de stock */}
             <Route path="logistica/stock" element={<RotacionStockPage />} />
-            <Route path="logistica/dias-inventario" element={<DiasInventarioPage />} />
-            <Route path="logistica/stock-baja-rotacion" element={<StockBajaRotacionPage />} />
-
             <Route path="logistica/rotacion/promedio" element={<RotacionPromedioPage />} />
             <Route path="logistica/rotacion/dias" element={<DiasInventarioPage />} />
             <Route path="logistica/rotacion/baja" element={<StockBajaRotacionPage />} />
-
             <Route path="logistica/stock/productos-criticos" element={<ProductosCriticosPage />} />
 
+            {/* ===== STOCK ===== */}
+            <Route path="stock" element={<StockPage />} />
 
+            {/* ===== MARKETING ===== */}
+            <Route path="marketing">
+                <Route index element={<MarketingPage />} />
 
-            <Routes>
-                {/*  Ruta principal de marketing */}
-                <Route path="/superadmin/analytics/marketing" element={<MarketingPage />} />
-
-                {/*  Subpáginas  marketing individuales */}
-                <Route path="/superadmin/analytics/marketing/calendario" element={<CalendarioCampaniasPage />} />
-                <Route path="/superadmin/analytics/marketing/roi" element={<ROICampaniasPage />} />
-                <Route path="/superadmin/analytics/marketing/cac" element={<CACPage />} />
-                <Route path="/superadmin/analytics/marketing/embudo" element={<EmbudoConversionPage />} />
-                <Route path="/superadmin/analytics/marketing/canal-rentabilidad" element={<RentabilidadCanalPage />} />
-                <Route path="/superadmin/analytics/marketing/segmentos" element={<SegmentosClientesPage />} />
-                <Route path="/superadmin/analytics/marketing/canales-origen" element={<CanalOrigenClientesPage />} />
-                <Route path="/superadmin/analytics/marketing/recompra" element={<TasaRecompraPage />} />
-                <Route path="/superadmin/analytics/marketing/churn" element={<ChurnClientesPage />} />
-                <Route path="/superadmin/analytics/marketing/satisfaccion" element={<SatisfaccionClientePage />} />
-                <Route path="/superadmin/analytics/marketing/sentimiento" element={<SentimientoResenasPage />} />
-                <Route path="/superadmin/analytics/marketing/variacion-mensual" element={<PanelVariacionMensualPage />} />
-                <Route path="/superadmin/analytics/marketing/canales-contacto" element={<CanalesContactoPreferidosPage />}  />
-                <Route path="/superadmin/analytics/marketing/churn" element={<ChurnClientesPage />} />
-                <Route path="/superadmin/analytics/embudo-conversion"   element={<EmbudoConversionPage />}/>
-                <Route path="frecuencia-compra" element={<FrecuenciaCompraPromedioPage />} />
+                <Route path="calendario" element={<CalendarioCampaniasPage />} />
+                <Route path="roi" element={<ROICampaniasPage />} />
+                <Route path="cac" element={<CACPage />} />
+                <Route path="embudo" element={<EmbudoConversionPage />} />
+                <Route path="canal-rentabilidad" element={<RentabilidadCanalPage />} />
+                <Route path="segmentos" element={<SegmentosClientesPage />} />
+                <Route path="canales-origen" element={<CanalOrigenClientesPage />} />
+                <Route path="canales-contacto" element={<CanalesContactoPreferidosPage />} />
+                <Route path="recompra" element={<TasaRecompraPage />} />
+                <Route path="churn" element={<ChurnClientesPage />} />
+                <Route path="satisfaccion" element={<SatisfaccionClientePage />} />
+                <Route path="sentimiento" element={<SentimientoResenasPage />} />
                 <Route path="variacion-mensual" element={<PanelVariacionMensualPage />} />
-                <Route path="rentabilidad-canal" element={<RentabilidadCanalPage />} />
-                <Route path="roi-campanias" element={<ROICampaniasPage />} />
-                <Route path="satisfaccion-cliente" element={<SatisfaccionClientePage />} />
-                <Route path="segmentos-clientes" element={<SegmentosClientesPage />} />
-                <Route path="sentimiento-resenas" element={<SentimientoResenasPage />} />
-                <Route path="tasa-recompra" element={<TasaRecompraPage />} />
+                <Route path="frecuencia-compra" element={<FrecuenciaCompraPromedioPage />} />
                 <Route path="ventas-por-categoria" element={<VentasPorCategoriaPage />} />
                 <Route path="top-productos" element={<TopProductosPage />} />
-                <Route path="clientes-nuevos-vs-recurrentes" element={<ClientesNuevosVsRecurrentesPage /> } />
+                <Route path="clientes-nuevos-vs-recurrentes" element={<ClientesNuevosVsRecurrentesPage />} />
+                <Route path="clientes-top-ltv" element={<ClientesTopLTVPage />} />
                 <Route path="clv-ltv" element={<CLV_LTVPage />} />
                 <Route path="cohortes-recompra" element={<CohortesRecompraPage />} />
                 <Route path="comparativa-vendedores" element={<ComparativaVendedoresPage />} />
-                <Route path="clientes-top-ltv" element={<ClientesTopLTVPage />} />
 
-            </Routes>
+            </Route>
 
-            {/* Si escriben algo mal, redirige a analytics */}
+            <Route
+                path="productividad-vendedor"
+                element={<ProductividadVendedor />}
+            />
+
+            {/* ===== FALLBACK ===== */}
             <Route path="*" element={<Navigate to="/superadmin/analytics" replace />} />
         </Routes>
     );

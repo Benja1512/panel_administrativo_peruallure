@@ -1,0 +1,96 @@
+/* ===============================
+   👤 USER FORM
+=============================== */
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    max-width: 420px;
+    padding: 24px;
+
+    background-color: var(--bg-card, #ffffff);
+    border-radius: 12px;
+    box-shadow: var(--shadow-card, 0 8px 24px rgba(0, 0, 0, 0.08));
+}
+
+/* ===============================
+   INPUTS & SELECT
+=============================== */
+
+.user-form input,
+.user-form select {
+    padding: 10px 12px;
+
+    font-size: 14px;
+    border-radius: 8px;
+
+    border: 1px solid #d1d5db;
+    background-color: #ffffff;
+
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.user-form input:focus,
+.user-form select:focus {
+    outline: none;
+    border-color: var(--primary, #2563eb);
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.user-form input:disabled {
+    background-color: #f1f5f9;
+    cursor: not-allowed;
+}
+
+/* ===============================
+   BUTTONS
+=============================== */
+
+.user-form .buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.user-form button {
+    flex: 1;
+    padding: 10px 14px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    border-radius: 8px;
+    border: none;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Botón principal */
+.user-form button[type="submit"] {
+    background-color: var(--primary, #2563eb);
+    color: #ffffff;
+}
+
+.user-form button[type="submit"]:hover {
+    background-color: #1e40af;
+}
+
+/* Botón secundario */
+.user-form button[type="button"] {
+    background-color: #e5e7eb;
+    color: #111827;
+}
+
+.user-form button[type="button"]:hover {
+    background-color: #d1d5db;
+}
+
+/* Disabled */
+.user-form button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}

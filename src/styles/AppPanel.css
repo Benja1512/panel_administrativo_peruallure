@@ -1,23 +1,50 @@
-/* ===== PANEL BASE ===== */
+/* ==================================================
+   APP PANEL — BASE (DASHBOARD / ADMIN)
+   Full width, sin centrado
+================================================== */
+
 .app-panel {
     min-height: 100vh;
+    width: 100%;
     background: #f4f6f8;
-    padding: 48px;
+    padding: 0px;
+    box-sizing: border-box;
+
     font-family: "Aptos", "Aptos Body", system-ui, -apple-system,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-/* ===== CARD PRINCIPAL ===== */
+/* ==================================================
+   PANEL CARD — USO GENERAL (DASHBOARD)
+   ❌ NO centrada
+================================================== */
+
 .panel-card {
     background: #ffffff;
-    max-width: 900px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: none;          /* 🔥 clave */
+    margin: 0;                /* 🔥 clave */
     padding: 40px;
     border-radius: 16px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
 }
 
-/* ===== TÍTULOS ===== */
+/* ==================================================
+   PANEL CARD — FORMULARIOS / AUTH
+   ✅ centrado SOLO cuando se necesita
+================================================== */
+
+.auth-container .panel-card,
+.form-container .panel-card {
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+/* ==================================================
+   TÍTULOS
+================================================== */
+
 .panel-title {
     font-size: 28px;
     font-weight: 700;
@@ -31,7 +58,10 @@
     line-height: 1.6;
 }
 
-/* ===== RESPONSIVE ===== */
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
 @media (max-width: 768px) {
     .app-panel {
         padding: 24px;
@@ -43,96 +73,5 @@
 
     .panel-title {
         font-size: 22px;
-    }
-}
-/* ===== ADMIN LAYOUT ===== */
-.admin-layout {
-    display: flex;
-    min-height: 100vh;
-    background: #f4f6f8;
-}
-
-/* ===== SIDEBAR ===== */
-.admin-sidebar {
-    width: 260px;
-    background: linear-gradient(180deg, #0f172a, #020617);
-    color: #ffffff;
-    padding: 32px 24px;
-    display: flex;
-    flex-direction: column;
-}
-
-.sidebar-title {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 4px;
-}
-
-.sidebar-company {
-    font-size: 13px;
-    color: #cbd5f5;
-    margin-bottom: 32px;
-}
-
-/* ===== MENU ===== */
-.sidebar-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.menu-item {
-    background: rgba(255, 255, 255, 0.06);
-    border: none;
-    color: #ffffff;
-    padding: 12px 16px;
-    border-radius: 10px;
-    text-align: left;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background 0.2s, transform 0.1s;
-}
-
-.menu-item:hover {
-    background: rgba(255, 255, 255, 0.15);
-}
-
-.menu-item.active {
-    background: #e53935;
-    font-weight: 600;
-}
-
-.menu-item:active {
-    transform: scale(0.97);
-}
-
-/* ===== CONTENIDO ===== */
-.admin-content {
-    flex: 1;
-    padding: 48px;
-}
-
-.admin-content .panel-card {
-    margin-top: 32px;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 900px) {
-    .admin-layout {
-        flex-direction: column;
-    }
-
-    .admin-sidebar {
-        width: 100%;
-        flex-direction: row;
-        overflow-x: auto;
-    }
-
-    .sidebar-menu {
-        flex-direction: row;
-    }
-
-    .menu-item {
-        white-space: nowrap;
     }
 }

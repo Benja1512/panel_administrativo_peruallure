@@ -1,0 +1,89 @@
+/* =========================================
+   AUDITORÍA – REGISTROS DE ACTIVIDAD
+========================================= */
+
+.audit-logs-container {
+    padding: 24px;
+    background-color: var(--bg-card);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+    color: var(--text-main);
+}
+
+.audit-logs-header {
+    margin-bottom: 16px;
+}
+
+.audit-logs-header h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.audit-logs-header p {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+/* ======================
+   TABLA DE AUDITORÍA
+====================== */
+
+.audit-logs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+.audit-logs-table th,
+.audit-logs-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.audit-logs-table th {
+    background-color: var(--primary-soft);
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.audit-logs-table td {
+    font-size: 13px;
+    color: var(--text-main);
+}
+
+.audit-logs-table tr:hover {
+    background-color: #f9fafb;
+}
+
+/* =========================
+   ETIQUETAS DE EVENTO
+========================= */
+
+.audit-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    color: white;
+}
+
+.audit-tag--login {
+    background-color: var(--success);
+}
+
+.audit-tag--logout {
+    background-color: var(--danger);
+}
+
+.audit-tag--update {
+    background-color: var(--warning);
+}
+
+.audit-tag--other {
+    background-color: var(--primary);
+}

@@ -77,23 +77,20 @@ import "../../../styles/LogisticsAndSupply/LogisticsAndSupply.css";
 
 const AnalyticsPage = () => {
     return (
-        <>
+        <div className="analytics-root"> {/* 🔥 CONTENEDOR ÚNICO */}
+
             {/* ⭐ PORTADA */}
-            <div id="dashboard-portada" className="analytics-page-container">
-                <section className="analytics-section portada-dashboard">
-                    <h1>📊 Dashboard de Analisis General</h1>
-                    <h3>PeruAllure – Panel de Supervisión</h3>
-                    <p>📅 Fecha: {new Date().toLocaleDateString()}</p>
-                    <p>🧑‍💼 Usuario: SuperAdmin</p>
-                </section>
-            </div>
+            <section className="analytics-section portada-dashboard">
+                <h1>📊 Dashboard de Analisis General</h1>
+                <h3>PeruAllure – Panel de Supervisión</h3>
+                <p>📅 Fecha: {new Date().toLocaleDateString()}</p>
+                <p>🧑‍💼 Usuario: SuperAdmin</p>
+            </section>
 
             {/* ⭐ TOOLBAR DE EXPORTACIÓN */}
-            <div className="no-export">
-                <section className="analytics-section">
-                    <ExportToolbar />
-                </section>
-            </div>
+            <section className="analytics-section no-export">
+                <ExportToolbar />
+            </section>
 
             {/* ⭐ CONTENIDO EXPORTABLE */}
             <div id="dashboard-capturable" className="analytics-page-container">
@@ -131,11 +128,7 @@ const AnalyticsPage = () => {
                     <PedidosPendientesEnTransito />
                     <PedidosPorCategoria />
                     <SLACumplimiento />
-
-
-
                 </section>
-
 
                 <section id="marketing" className="analytics-section">
                     <h2>📣 Marketing & Campañas</h2>
@@ -188,8 +181,9 @@ const AnalyticsPage = () => {
                 </section>
 
             </div>
+
             <Outlet />
-        </>
+        </div>
     );
 };
 

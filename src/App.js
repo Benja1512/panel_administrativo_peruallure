@@ -12,6 +12,20 @@ import VendedorApp from "./apps/VendedorApp";
 import VendedorExternoApp from "./apps/VendedorExternoApp";
 import ClienteApp from "./apps/ClienteApp";
 
+
+// 🎨 Global Style (Design System Base)
+import "./styles/theme.css";
+import "./styles/base/reset.css";
+import "./styles/base/typography.css";
+import "./styles/base/utilities.css";
+
+
+// 🎨 Global UI Components
+import "./styles/components/card.css";
+import "./styles/components/kpi.css";
+import "./styles/components/chart.css";
+import "./styles/components/badge.css";
+
 function App() {
     return (
         <BrowserRouter>

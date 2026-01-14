@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../../styles/AuditLogsPage.css";
+import "../../../styles/AuditLogsPage.css";
 
 const DEMO_MODE = true;
 
@@ -12,7 +12,7 @@ const AuditLogsPage = () => {
             const demoLogs = [
                 { id: 1, usuario: "Benjamin Ontiveros", rol: "SUPER_ADMIN", accion: "Creó un nuevo rol CLIENTE", fecha: "2025-10-12 14:23", ip: "192.168.1.10" },
                 { id: 2, usuario: "Luisa Gonzales", rol: "GESTOR", accion: "Actualizó permisos de VENDEDOR", fecha: "2025-10-12 14:30", ip: "192.168.1.25" },
-                { id: 3, usuario: "Carlos Ruiz", rol: "ADMIN", accion: "Eliminó usuario externo Jose López", fecha: "2025-10-11 17:42", ip: "192.168.1.15" },
+                { id: 3, usuario: "Carlos Ruiz", rol: "ADMIN", accion: "Eliminó usuarios externo Jose López", fecha: "2025-10-11 17:42", ip: "192.168.1.15" },
                 { id: 4, usuario: "Andrea Pérez", rol: "AUDITOR", accion: "Visualizó reportes del sistema", fecha: "2025-10-10 11:18", ip: "192.168.1.20" },
             ];
             setLogs(demoLogs);

@@ -1,0 +1,21 @@
+.productividad-vendedor {
+    background-color: var(--bg-card);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+    padding: 24px;
+    margin-bottom: 24px;
+    transition: var(--pa-transition);
+}
+
+.productividad-vendedor h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 6px;
+}
+
+.productividad-vendedor p {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}

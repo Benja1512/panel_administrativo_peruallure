@@ -1,15 +1,10 @@
 import React from "react";
-import "../styles/LayoutPanel.css"; // Usa el mismo diseño que superadmin
+import { Outlet } from "react-router-dom";
+import "../styles/LayoutPanel.css";
 
-const PanelLayout = ({ sidebar, children }) => {
-    return (
-        <div className="layout-panel">
-            {sidebar}
-            <main className="layout-content">
-                {children}
-            </main>
-        </div>
-    );
+
+const PanelLayout = () => {
+    return <Outlet />;
 };
 
 export default PanelLayout;

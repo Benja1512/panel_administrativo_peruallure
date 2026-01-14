@@ -1,0 +1,95 @@
+/* =========================================
+   RECHARTS – PERU ALLURE (LIGHT)
+========================================= */
+
+.recharts-wrapper {
+    background: transparent;
+    font-family: inherit;
+}
+
+/* ===== Grid ultra sutil ===== */
+.recharts-cartesian-grid line {
+    stroke: rgba(15, 23, 42, 0.05);
+    stroke-dasharray: 2 6;
+}
+
+/* ===== Ejes ===== */
+.recharts-cartesian-axis line {
+    stroke: rgba(15, 23, 42, 0.12);
+}
+
+.recharts-cartesian-axis-tick text {
+    fill: var(--pa-text-muted);
+    font-size: 12px;
+}
+
+/* ===== Tooltip clean ===== */
+.recharts-default-tooltip {
+    background: #ffffff !important;
+    border-radius: 14px !important;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12) !important;
+    border: none !important;
+    padding: 12px 14px !important;
+}
+
+.recharts-tooltip-label {
+    font-weight: 600;
+    color: var(--pa-text-main);
+}
+
+.recharts-tooltip-item {
+    font-size: 13px;
+    color: var(--pa-text-muted);
+}
+
+/* ===== Leyenda ===== */
+.recharts-legend-item-text {
+    font-size: 13px;
+    color: var(--pa-text-main) !important;
+}
+
+/* ===== LineChart ===== */
+.recharts-line path {
+    stroke-width: 3;
+    filter: drop-shadow(0 4px 6px rgba(37, 99, 235, 0.25));
+}
+
+.recharts-dot {
+    stroke-width: 2;
+    r: 4;
+}
+
+/* ===== Area ===== */
+.recharts-area path {
+    fill-opacity: 0.18;
+}
+
+/* ===== BarChart ===== */
+.recharts-bar-rectangle path {
+    rx: 12;
+    ry: 12;
+    filter: drop-shadow(0 8px 16px rgba(15, 23, 42, 0.12));
+}
+
+.recharts-bar-rectangle:hover path {
+    filter: drop-shadow(0 12px 22px rgba(15, 23, 42, 0.18));
+    opacity: 0.97;
+}
+
+/* ===== Pie ===== */
+.recharts-pie-sector {
+    stroke: #ffffff;
+    stroke-width: 2;
+}
+
+/* ===== Labels ===== */
+.recharts-label {
+    font-size: 13px;
+    font-weight: 600;
+    fill: var(--pa-text-main);
+}
+
+/* ===== Animaciones suaves ===== */
+.recharts-layer {
+    transition: all 0.25s ease;
+}

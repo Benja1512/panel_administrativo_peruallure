@@ -1,0 +1,251 @@
+/* =========================================
+   MARKETING – FEATURE STYLES
+   Orquestador del módulo Marketing
+========================================= */
+
+/* ---------- CONTENEDOR PRINCIPAL ---------- */
+
+.marketing-page {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 28px;
+    background: var(--bg-app);
+}
+
+/* ---------- HEADER ---------- */
+
+.marketing-header {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.marketing-header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.marketing-header p {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+/* ---------- GRID PRINCIPAL ---------- */
+
+.marketing-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+}
+
+/* ---------- COLUMNAS ---------- */
+
+.col-12 { grid-column: span 12; }
+.col-8  { grid-column: span 8; }
+.col-6  { grid-column: span 6; }
+.col-4  { grid-column: span 4; }
+.col-3  { grid-column: span 3; }
+
+/* ---------- SECCIONES ---------- */
+
+.marketing-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.marketing-section-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+/* ---------- TARJETAS ---------- */
+
+.marketing-card {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.marketing-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.marketing-card-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.marketing-card-subtitle {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+/* ---------- KPIs MARKETING ---------- */
+
+.marketing-kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.marketing-kpi {
+    background: var(--bg-card);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.marketing-kpi-label {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.marketing-kpi-value {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+/* ---------- ESTADOS KPI ---------- */
+
+.marketing-kpi.success {
+    border-left: 4px solid var(--success);
+}
+
+.marketing-kpi.warning {
+    border-left: 4px solid var(--warning);
+}
+
+.marketing-kpi.danger {
+    border-left: 4px solid var(--danger);
+}
+
+/* ---------- GRÁFICOS ---------- */
+
+.marketing-chart {
+    width: 100%;
+    height: 320px;
+}
+
+.marketing-chart.small {
+    height: 220px;
+}
+
+.marketing-chart.large {
+    height: 420px;
+}
+
+/* ---------- CAMPAÑAS / LISTAS ---------- */
+
+.marketing-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.marketing-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-card);
+    padding: 14px 16px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+    font-size: 14px;
+}
+
+/* ---------- FILTROS ---------- */
+
+.marketing-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.marketing-filter {
+    background: var(--bg-card);
+    padding: 8px 14px;
+    border-radius: var(--radius-md);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-main);
+    cursor: pointer;
+    box-shadow: var(--shadow-card);
+}
+
+.marketing-filter.active {
+    background: var(--primary-soft);
+    color: var(--primary);
+}
+
+/* ---------- TABLAS ---------- */
+
+.marketing-table-wrapper {
+    overflow-x: auto;
+}
+
+/* ---------- EMPTY / LOADING ---------- */
+
+.marketing-empty {
+    text-align: center;
+    padding: 40px;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 1024px) {
+    .marketing-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .col-8 { grid-column: span 6; }
+    .col-4 { grid-column: span 6; }
+}
+
+@media (max-width: 640px) {
+    .marketing-page {
+        padding: 20px;
+    }
+
+    .marketing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .col-12,
+    .col-8,
+    .col-6,
+    .col-4,
+    .col-3 {
+        grid-column: span 1;
+    }
+}
+/* =========================================
+   FIX FONDO GRIS – ANALYTICS
+========================================= */
+
+.analytics-card,
+.panel-card,
+.card,
+.section,
+.chart-card,
+.table-card {
+    background: #ffffff !important;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.10);
+}

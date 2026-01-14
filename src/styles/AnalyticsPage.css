@@ -1,0 +1,25 @@
+/* CONTENEDOR RAÍZ DEL ANALYTICS */
+.analytics-root {
+    display: flex;
+    flex-direction: column;   /* 🔥 ESTO LO SOLUCIONA TODO */
+    gap: 32px;
+    width: 100%;
+}
+
+/* Cada sección SIEMPRE en vertical */
+.analytics-section {
+    width: 100%;
+}
+
+/* Contenedor exportable */
+.analytics-page-container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    width: 100%;
+}
+
+/* Evitar comportamientos laterales heredados */
+.no-export {
+    width: 100%;
+}

@@ -1,0 +1,43 @@
+/* ===============================
+   TYPOGRAPHY
+================================ */
+
+body {
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-main);
+    background: var(--bg-app);
+    line-height: 1.6;
+}
+
+/* Headings */
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+/* Links */
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,64 @@
+/* =====================================
+   KPI – COLORES SUAVES ENTERPRISE
+===================================== */
+
+/* Valores grandes */
+.panel-card .kpi-value,
+.panel-card strong {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Variantes automáticas por texto */
+.panel-card:has(:contains("CSAT")) .kpi-value {
+    color: var(--success);
+}
+
+.panel-card:has(:contains("NPS")) .kpi-value {
+    color: var(--primary);
+}
+
+.panel-card:has(:contains("DEVOLUCIÓN")) .kpi-value {
+    color: var(--danger);
+}
+
+.panel-card:has(:contains("CRECIMIENTO")) .kpi-value {
+    color: var(--success);
+}
+/* Margen como badge elegante */
+.margen,
+td span {
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.margen--good {
+    background: var(--success-soft);
+    color: var(--success);
+}
+
+.margen--bad {
+    background: rgba(239, 68, 68, 0.12);
+    color: var(--danger);
+}
+.kpi,
+.kpi-card {
+    background: linear-gradient(180deg, #fff, #f8fafc);
+    border-radius: var(--pa-radius-md);
+    box-shadow: var(--pa-shadow-sm);
+    padding: 20px;
+}
+
+.kpi-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--pa-primary);
+}
+
+.kpi-label {
+    font-size: 13px;
+    color: var(--pa-text-muted);
+    text-transform: uppercase;
+}

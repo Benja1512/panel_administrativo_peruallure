@@ -12,7 +12,7 @@ const SuperAdminSidebar = () => {
                 <span>Peru Allure Company</span>
             </div>
 
-            {/* 🚨 SOLO SE AGREGA ESTE DIV */}
+            {/* 🚨 SCROLL */}
             <div className="sidebar-scroll">
                 <nav className="sidebar-menu">
 
@@ -32,9 +32,10 @@ const SuperAdminSidebar = () => {
 
                     {/* 👥 Gestión Administrativa */}
                     <div className="sidebar-subtitle">🛠 Gestión Administrativa</div>
-                    <NavLink to="/superadmin/usuarios" className="sidebar-item">👥 Usuarios</NavLink>
-                    <NavLink to="/superadmin/roles" className="sidebar-item">🔧 Roles Globales</NavLink>
-                    <NavLink to="/superadmin/permisos" className="sidebar-item">🔐 Permisos</NavLink>
+                    <NavLink to="/superadmin/administracion/usuarios" className="sidebar-item">👥 Usuarios</NavLink>
+                    <NavLink to="/superadmin/administracion/roles" className="sidebar-item">🔧 Roles Globales</NavLink>
+                    <NavLink to="/superadmin/administracion/permisos" className="sidebar-item">🔐 Permisos</NavLink>
+                    <NavLink to="/superadmin/administracion/asignar-permisos" className="sidebar-item">🗂️ Asignar Permisos</NavLink>
 
                     {/* ⚙️ Sistema */}
                     <div className="sidebar-subtitle">⚙️ Sistema & Seguridad</div>
@@ -42,14 +43,12 @@ const SuperAdminSidebar = () => {
                     <NavLink to="/superadmin/configuracion" className="sidebar-item">⚙️ Configuración</NavLink>
                     <NavLink to="/superadmin/soporte" className="sidebar-item">🆘 Soporte Técnico</NavLink>
 
-                    
                     {/* 🚧 Próximamente */}
                     <div className="sidebar-item disabled">🏢 Empresas (Próximamente)</div>
 
                 </nav>
-            </div> {/* ← SCROLL AQUÍ */}
+            </div>
         </aside>
-
     );
 };
 

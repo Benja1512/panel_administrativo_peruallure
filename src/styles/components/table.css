@@ -1,0 +1,92 @@
+/* ===============================
+   TABLE – Design System
+================================ */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-card);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+    font-size: 14px;
+}
+
+/* ===============================
+   HEADER
+================================ */
+
+.table thead {
+    background: #f1f5f9;
+}
+
+.table th {
+    text-align: left;
+    padding: 14px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+/* ===============================
+   BODY
+================================ */
+
+.table td {
+    padding: 14px 16px;
+    color: var(--text-main);
+    border-top: 1px solid #e5e7eb;
+}
+
+.table tbody tr {
+    transition: background 0.15s ease;
+}
+
+.table tbody tr:hover {
+    background: #f8fafc;
+}
+
+/* ===============================
+   ALIGNMENTS
+================================ */
+
+.table-center td,
+.table-center th {
+    text-align: center;
+}
+
+.table-right td,
+.table-right th {
+    text-align: right;
+}
+
+/* ===============================
+   STATES
+================================ */
+
+.table-muted {
+    opacity: 0.7;
+}
+
+.table-empty {
+    text-align: center;
+    padding: 32px;
+    color: var(--text-muted);
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+    .table {
+        font-size: 13px;
+    }
+
+    .table th,
+    .table td {
+        padding: 12px;
+    }
+}

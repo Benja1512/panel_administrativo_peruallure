@@ -1,0 +1,84 @@
+/* =====================================
+   MARKETING – BASE CORE
+===================================== */
+
+/* 🧩 Cards */
+.marketing-card {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    box-shadow: var(--shadow-card);
+}
+
+/* 🧠 Titles */
+.marketing-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.marketing-subtitle {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+/* 📊 KPI */
+.marketing-kpi {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.marketing-kpi-label {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.marketing-kpi-value {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+/* 🧱 Layout */
+.marketing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+/* 📈 Charts */
+.marketing-chart {
+    height: 260px;
+    margin-top: 16px;
+}
+
+/* 🏷️ Badges */
+.marketing-badge {
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.marketing-badge--success {
+    background: var(--success-soft);
+    color: var(--success);
+}
+
+.marketing-badge--danger {
+    background: rgba(239, 68, 68, 0.12);
+    color: var(--danger);
+}
+
+
+/* 🎯 Marketing look limpio */
+.marketing-card,
+.panel-card {
+    background: var(--bg-card);
+    border: 1px solid rgba(15, 23, 42, 0.06);
+}

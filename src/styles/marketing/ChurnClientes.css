@@ -5,30 +5,44 @@
     margin-bottom: 1.5rem;
 }
 
+/* KPI CARD */
 .churn-card {
-    background: #f8fafc;
-    border-radius: 12px;
+    background: var(--bg-card);
+    border-radius: var(--radius-md);
     padding: 1rem;
     text-align: center;
+    border: 1px solid var(--color-border, #e5e7eb);
+    box-shadow: var(--shadow-soft, 0 8px 24px rgba(15, 23, 42, 0.08));
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
+.churn-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.12);
+}
+
+/* LABEL */
 .churn-card .label {
     font-size: 0.85rem;
-    color: #64748b;
+    color: var(--text-muted);
 }
 
+/* VALUE */
 .churn-card .value {
     font-size: 1.4rem;
     font-weight: 700;
-    color: #0f172a;
+    color: var(--text-main);
 }
 
+/* DANGER */
 .churn-card .value.danger {
-    color: #dc2626;
+    color: var(--danger);
 }
 
+/* INSIGHT TEXT */
 .churn-insight {
     margin-top: 1rem;
     font-size: 0.9rem;
-    color: #475569;
+    color: var(--text-muted);
+    line-height: 1.6;
 }

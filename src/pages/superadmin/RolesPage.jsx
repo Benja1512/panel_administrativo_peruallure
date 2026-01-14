@@ -1,4 +1,4 @@
-// src/pages/superadmin/RolesPage.jsx
+// src/pages/superadmin/Roles.jsx
 import React from "react";
 
 const RolesPage = () => {

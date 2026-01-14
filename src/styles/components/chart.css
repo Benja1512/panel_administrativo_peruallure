@@ -1,0 +1,40 @@
+.recharts-bar-rectangle path {
+    fill: var(--primary);
+    opacity: 0.9;
+}
+
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+    stroke: #e5e7eb;
+    stroke-dasharray: 3 3;
+}
+/* =====================================
+   🔥 FIX GRÁFICOS FEOS (CSS ONLY)
+===================================== */
+
+/* Contenedor del gráfico */
+.recharts-wrapper,
+.recharts-surface {
+    background: transparent !important;
+}
+
+/* Card que contiene el gráfico */
+.panel-card:has(.recharts-wrapper),
+.panel-card:has(svg) {
+    background: var(--bg-card) !important;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+/* Barras del gráfico */
+.recharts-bar-rectangle path {
+    fill: var(--primary);
+    opacity: 0.85;
+    rx: 8;
+    ry: 8;
+}
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+    stroke: #e5e7eb;
+    stroke-dasharray: 3 3;
+}

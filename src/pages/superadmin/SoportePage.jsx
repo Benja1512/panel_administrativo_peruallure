@@ -1,13 +1,8 @@
-// src/pages/superadmin/SoportePage.jsx
 import React from "react";
+import SoporteTecnico from "../../components/superadmin/soporte/TicketTable";
 
 const SoportePage = () => {
-    return (
-        <div className="page-container">
-            <h1>Centro de Soporte</h1>
-            <p>Reportes, incidencias y asistencia técnica.</p>
-        </div>
-    );
+    return <SoporteTecnico />;
 };
 
 export default SoportePage;

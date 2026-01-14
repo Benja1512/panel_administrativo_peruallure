@@ -2,7 +2,9 @@
     --sidebar-width: 280px;
 }
 
-/* ============= SIDEBAR ============= */
+/* ================================
+   SIDEBAR SUPERADMIN
+================================ */
 .superadmin-sidebar {
     position: fixed;
     top: 0;
@@ -15,42 +17,76 @@
     z-index: 1000;
 }
 
-/* Scroll del sidebar */
-.superadmin-sidebar::-webkit-scrollbar { width: 6px; }
+/* Scroll sidebar */
+.superadmin-sidebar::-webkit-scrollbar {
+    width: 6px;
+}
 .superadmin-sidebar::-webkit-scrollbar-thumb {
     background: #c4c4c4;
     border-radius: 10px;
 }
 
-/* ============= CONTENIDO ============= */
-.layout-content {
-    margin-left: var(--sidebar-width);
-    height: 100vh;
-    overflow-y: auto;
-    padding: 50px;
-    background: #f5f7fa;
+/* ================================
+   LAYOUT PRINCIPAL
+================================ */
+.layout-panel {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
-/* Scroll del contenido */
-.layout-content::-webkit-scrollbar { width: 8px; }
+/* ================================
+   CONTENIDO PRINCIPAL (CENTRADO)
+================================ */
+.layout-content {
+    margin-left: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 32px 0;
+    background: #f5f7fa;
+    overflow-y: auto;
+}
+
+/* Contenedor interno centrado */
+.layout-content > * {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ================================
+   ELIMINAR BORDES SUPERIORES (línea verde)
+================================ */
+.analytics-page,
+.page-container,
+.section-container,
+.dashboard-container,
+.content-wrapper {
+    border-top: none !important;
+}
+
+/* ================================
+   SCROLL CONTENIDO
+================================ */
+.layout-content::-webkit-scrollbar {
+    width: 8px;
+}
 .layout-content::-webkit-scrollbar-thumb {
     background: #b5b5b5;
     border-radius: 10px;
 }
-/* 🚀 Eliminar franja blanca superior del contenido */
-.layout-content {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-    border-top: none !important;
-    background-clip: padding-box;  /* evita espacio por borde invisible */
-}
 
-/* 🔧 El contenedor general tampoco debe empujar hacia abajo */
-.layout-panel {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-}
-html, body {
-    margin: 0 !important;
-    padding: 0 !important;
+/* ================================
+   RESET GLOBAL
+================================ */
+html,
+body {
+    margin: 0;
+    padding: 0;
 }

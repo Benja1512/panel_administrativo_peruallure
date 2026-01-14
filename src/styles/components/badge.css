@@ -1,0 +1,27 @@
+/* ===============================
+   BADGE COMPONENT
+================================ */
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge--success {
+    background: var(--success-soft);
+    color: var(--success);
+}
+
+.badge--warning {
+    background: rgba(245, 158, 11, 0.15);
+    color: var(--warning);
+}
+
+.badge--danger {
+    background: rgba(239, 68, 68, 0.12);
+    color: var(--danger);
+}

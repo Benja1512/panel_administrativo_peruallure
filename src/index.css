@@ -3,3 +3,37 @@
     font-family: "Aptos", "Aptos Body", system-ui, -apple-system,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
+
+
+@import "./styles/theme.css";
+@import "./styles/marketing/marketing-base.css";
+
+
+
+/* base */
+@import "./base/reset.css";
+@import "./base/layout.css";
+@import "./base/typography.css";
+@import "./base/utilities.css";
+
+/* components */
+@import "./components/button.css";
+@import "./components/badge.css";
+@import "./components/card.css";
+@import "./components/kpi.css";
+@import "./components/chart.css";
+@import "./components/table.css";
+
+/* layouts */
+@import "./layouts/dashboard.css";
+@import "./layouts/navbar.css";   /* ← corregido */
+@import "./layouts/sidebar.css";
+
+/* features */
+@import "./features/analytics.css";
+@import "./features/marketing.css";
+@import "./features/ventas.css";
+
+
+@import "./overrides/recharts.css";
+@import "./overrides/tables.css";

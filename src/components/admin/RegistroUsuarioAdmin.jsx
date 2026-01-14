@@ -51,7 +51,7 @@ const RegistroUsuarioAdmin = () => {
             });
         } catch (err) {
             console.error(err);
-            setError(err.response?.data?.message || '❌ Error al crear usuario');
+            setError(err.response?.data?.message || '❌ Error al crear usuarios');
         }
     };
 

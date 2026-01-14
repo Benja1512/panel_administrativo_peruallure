@@ -1,0 +1,60 @@
+/* =====================================
+   🔥 OVERRIDE DEFINITIVO – CARDS LEGACY
+   (NO TOCAR JSX)
+===================================== */
+
+/* Todas las cards antiguas */
+.panel-card,
+.dashboard-card,
+.widget,
+.kpi,
+.kpi-box {
+    background: var(--bg-card) !important;
+    color: var(--text-main) !important;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+/* Quitar fondos oscuros internos */
+.panel-card *,
+.dashboard-card *,
+.widget * {
+    background: transparent !important;
+}
+/* Tabla limpia */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #f8fafc;
+}
+
+th {
+    text-align: left;
+    font-size: 13px;
+    color: var(--text-muted);
+    padding: 12px;
+}
+
+td {
+    padding: 14px 12px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 14px;
+}
+.card,
+.panel-card {
+    background: var(--pa-bg-card);
+    border-radius: var(--pa-radius-md);
+    box-shadow: var(--pa-shadow-md);
+    padding: 24px;
+    transition: transform var(--pa-transition),
+    box-shadow var(--pa-transition);
+}
+
+.card:hover,
+.panel-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--pa-shadow-lg);
+}
