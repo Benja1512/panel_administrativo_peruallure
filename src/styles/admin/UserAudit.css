@@ -1,0 +1,15 @@
+.user-audit {
+    padding: 20px;
+    background: #f9fafb;
+    border-radius: 8px;
+}
+
+.audit-actions {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.audit-graph {
+    margin-top: 30px;
+}

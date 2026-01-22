@@ -1,0 +1,27 @@
+.tenant-card {
+    background: #fff;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 24px;
+}
+
+.tenant-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.tenant-select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+}
+
+.tenant-hint {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 6px;
+}

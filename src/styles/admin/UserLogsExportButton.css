@@ -1,0 +1,13 @@
+.logs-export-btn {
+    background: #0ea5e9;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.logs-export-btn:hover {
+    background: #0284c7;
+}

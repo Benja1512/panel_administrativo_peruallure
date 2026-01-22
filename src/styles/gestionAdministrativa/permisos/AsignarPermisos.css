@@ -1,0 +1,307 @@
+.asignar-permisos-page {
+    background: #f7f8fb;
+    padding: 24px;
+    min-height: 100vh;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.permissions-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+    margin: 16px 0;
+}
+
+.permission-item {
+    background: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.btn-primary {
+    background: #4f46e5;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-primary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+.asignar-permisos-page {
+    background: #f7f8fb;
+    padding: 24px;
+    min-height: 100vh;
+}
+
+.ap-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.ap-badges {
+    display: flex;
+    gap: 8px;
+}
+
+.ap-badge {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+}
+
+.ap-badge--warn {
+    background: #fff7ed;
+    border-color: #fdba74;
+}
+
+.ap-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 14px;
+}
+
+.ap-label {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.ap-select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+}
+
+.ap-subrow {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.ap-muted {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.ap-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.ap-btn {
+    border: 1px solid #d1d5db;
+    background: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.ap-btn--ghost:hover {
+    background: #f9fafb;
+}
+
+.ap-btn--primary {
+    border: none;
+    color: #fff;
+    background: #4f46e5;
+}
+
+.ap-btn--primary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.ap-info {
+    margin: 8px 0 12px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: #eef2ff;
+    border: 1px solid #c7d2fe;
+}
+
+.ap-info--warn {
+    background: #fff7ed;
+    border-color: #fdba74;
+}
+
+.ap-perms-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.ap-search {
+    width: 280px;
+    max-width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+}
+
+.ap-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.ap-grid--disabled {
+    opacity: 0.7;
+}
+
+.ap-perm {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 12px;
+}
+
+.ap-perm input {
+    transform: scale(1.1);
+}
+
+.ap-perm-name {
+    font-weight: 600;
+}
+
+.ap-empty {
+    padding: 12px;
+    color: #6b7280;
+}
+
+.ap-footer {
+    margin-top: 12px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ap-hint {
+    color: #6b7280;
+    margin-top: 10px;
+}
+/* ===== Layout helpers ===== */
+.ap-row { display: flex; gap: 14px; flex-wrap: wrap; }
+.ap-col { flex: 1; min-width: 280px; }
+
+.ap-filters { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.ap-select--small { width: 220px; }
+
+.ap-perm-text { display: flex; flex-direction: column; gap: 2px; }
+.ap-perm-meta { font-size: 12px; color: #6b7280; }
+
+.ap-perm--critical { border-color: #fdba74; background: #fff7ed; }
+
+.ap-dirty { color: #b45309; font-weight: 700; margin-left: 6px; }
+
+.ap-template { display: flex; flex-direction: column; gap: 8px; }
+.ap-template-desc { margin-top: -6px; }
+
+/* ===== Override panel ===== */
+.ap-override-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 10px; }
+.ap-override-item { border: 1px solid #e5e7eb; background: #fff; border-radius: 10px; padding: 10px 12px; display: flex; justify-content: space-between; gap: 10px; }
+.ap-override-main { display: flex; flex-direction: column; gap: 2px; }
+.ap-override-actions { display: flex; gap: 8px; align-items: center; }
+
+.ap-chip { border: 1px solid #d1d5db; background: #fff; padding: 6px 10px; border-radius: 999px; cursor: pointer; font-weight: 700; font-size: 12px; }
+.ap-chip--on { border-color: #22c55e; background: #f0fdf4; }
+.ap-chip--off { border-color: #ef4444; background: #fef2f2; }
+
+/* ===== Diff ===== */
+.ap-diff-block { margin-top: 10px; padding-top: 10px; border-top: 1px solid #e5e7eb; }
+.ap-diff-title { font-weight: 800; margin-bottom: 8px; }
+.ap-diff-row { display: flex; gap: 14px; flex-wrap: wrap; }
+.ap-diff-col { flex: 1; min-width: 260px; }
+.ap-diff-sub { font-weight: 700; margin-bottom: 6px; }
+.ap-diff-list { margin: 0; padding-left: 18px; }
+.ap-diff-list li { margin: 4px 0; }
+
+/* ===== Savebar ===== */
+.ap-savebar {
+    position: sticky;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(6px);
+}
+.ap-savebar-warn { font-weight: 800; color: #b45309; }
+.ap-savebar-ok { color: #16a34a; font-weight: 800; }
+
+/* ===== Modal ===== */
+.ap-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(17,24,39,0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    z-index: 9999;
+}
+.ap-modal {
+    width: 100%;
+    max-width: 520px;
+    background: #fff;
+    border-radius: 14px;
+    padding: 16px;
+    border: 1px solid #e5e7eb;
+}
+.ap-modal-title { margin: 0 0 8px; }
+.ap-modal-text { margin: 0 0 14px; color: #374151; }
+.ap-modal-actions { display: flex; justify-content: flex-end; gap: 10px; }
+/* ===== Audit log ===== */
+.ap-audit-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ap-audit-item {
+    display: flex;
+    gap: 12px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    background: #fafafa;
+    font-size: 13px;
+}
+
+.ap-audit-date {
+    font-family: monospace;
+    color: #6b7280;
+    min-width: 140px;
+}
+
+.ap-audit-text {
+    color: #111827;
+}

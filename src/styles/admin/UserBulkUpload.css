@@ -1,0 +1,9 @@
+.bulk-upload {
+    padding: 20px;
+    border: 1px dashed #ccc;
+    margin-top: 20px;
+}
+
+.bulk-upload button {
+    margin-top: 10px;
+}

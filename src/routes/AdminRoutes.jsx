@@ -1,20 +1,32 @@
-import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import AdminPage from "../pages/admin/AdminPage";
+
+// PAGES (wrappers)
+import DashboardAdminPage from "../pages/admin/DashboardAdminPage";
+import AdministradoresPage from "../pages/admin/AdministradoresPage";
+import ReportesAdminPage from "../pages/admin/ReportesAdminPage";
+import VentasAdminPage from "../pages/admin/VentasAdminPage";
+import InventarioAdminPage from "../pages/admin/InventarioAdminPage";
+import SettingsAdminPage from "../pages/admin/SettingsAdminPage";
+
+import AnalyticsAdminPage from "../pages/admin/analytics/AnalyticsAdminPage";
 
 export default function AdminRoutes() {
     return (
         <Routes>
-
-            {/* /admin → redirige al dashboard */}
+            {/* /admin → dashboard */}
             <Route index element={<Navigate to="dashboard" replace />} />
 
-            {/* /admin/dashboard */}
-            <Route path="dashboard" element={<AdminPage />} />
+            {/* menú admin */}
+            <Route path="dashboard" element={<DashboardAdminPage />} />
+            <Route path="analytics" element={<AnalyticsAdminPage />} />
+            <Route path="usuarios" element={<AdministradoresPage />} />
+            <Route path="reportes" element={<ReportesAdminPage />} />
+            <Route path="ventas" element={<VentasAdminPage />} />
+            <Route path="inventario" element={<InventarioAdminPage />} />
+            <Route path="configuracion" element={<SettingsAdminPage />} />
 
-            {/* evitar rutas vacías o errores */}
+            {/* fallback */}
             <Route path="*" element={<Navigate to="dashboard" replace />} />
-
         </Routes>
     );
 }

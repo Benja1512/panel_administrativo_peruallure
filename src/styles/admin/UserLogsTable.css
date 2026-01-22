@@ -1,0 +1,32 @@
+.logs-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin-top: 15px;
+}
+
+.logs-table th,
+.logs-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.logs-table th {
+    background: #f3f4f6;
+    text-align: left;
+}
+
+.logs-table tr:nth-child(even) {
+    background: #fafafa;
+}
+
+.logs-table tr:hover {
+    background: #eef2ff;
+}
+
+.empty {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}

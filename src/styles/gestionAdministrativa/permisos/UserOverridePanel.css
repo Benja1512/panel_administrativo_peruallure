@@ -1,0 +1,15 @@
+.override-user {
+    padding: 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.override-actions {
+    margin-top: 6px;
+}
+
+.ap-muted {
+    color: #6b7280;
+    font-size: 13px;
+}

@@ -1,0 +1,15 @@
+.audit-log {
+    margin-top: 20px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.audit-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 6px 0;
+    font-size: 13px;
+    border-bottom: 1px solid #f1f1f1;
+}

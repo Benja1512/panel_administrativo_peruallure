@@ -1,0 +1,27 @@
+.alert-card {
+    background: #0f172a;
+    border-radius: 14px;
+    padding: 1rem;
+    color: white;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+}
+
+.alert-card h4 {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #f97316;
+}
+
+.alert-item {
+    font-size: 0.8rem;
+    color: #cbd5f5;
+    padding: 0.25rem 0;
+}
+
+.alert-card.critical h4 {
+    color: #ef4444;
+}
+

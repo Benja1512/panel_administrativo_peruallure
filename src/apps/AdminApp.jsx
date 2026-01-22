@@ -1,13 +1,15 @@
-import React from "react";
-import AdminLayout from "../components/admin/AdminLayout";
+import AdminSidebar from "../components/admin/layout/AdminSidebar";
 import AdminRoutes from "../routes/AdminRoutes";
+import "../styles/LayoutPanel.css";
+import "../styles/admin/dashboard/dashboard.css";
 
-const AdminApp = () => {
+export default function AdminApp() {
     return (
-        <AdminLayout>
-            <AdminRoutes />
-        </AdminLayout>
+        <div className="layout-panel">
+            <AdminSidebar />
+            <main className="layout-content">
+                <AdminRoutes />
+            </main>
+        </div>
     );
-};
-
-export default AdminApp;
+}

@@ -1,7 +1,7 @@
-import Permisos from "../../../components/superadmin/gestionAdministrativa/permisos/Permisos";
+import AsignarPermisos from "../../../components/superadmin/gestionAdministrativa/permisos/AsignarPermisos";
 
 const AsignarPermisosPage = () => {
-    return <Permisos />;
+    return <AsignarPermisos />;
 };
 
 export default AsignarPermisosPage;

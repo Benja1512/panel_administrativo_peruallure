@@ -1,10 +1,11 @@
-const AdminPage = () => {
-    return (
-        <div>
-            <h1>📊 Panel Administrador</h1>
-            <p>Bienvenido, Administrador.</p>
-        </div>
-    );
-};
+import { Outlet } from "react-router-dom";
+import "../../styles/admin/dashboard/dashboard.css";
 
-export default AdminPage;
+export default function AdminPage() {
+    return (
+        <main>
+            <Outlet />
+        </main>
+    );
+}
+

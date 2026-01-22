@@ -33,7 +33,7 @@ const SuperAdminSidebar = () => {
                     {/* 👥 Gestión Administrativa */}
                     <div className="sidebar-subtitle">🛠 Gestión Administrativa</div>
                     <NavLink to="/superadmin/administracion/usuarios" className="sidebar-item">👥 Usuarios</NavLink>
-                    <NavLink to="/superadmin/administracion/roles" className="sidebar-item">🔧 Roles Globales</NavLink>
+                    <NavLink to="/superadmin/administracion/roles-globales" className="sidebar-item">🔧 Roles Globales</NavLink>
                     <NavLink to="/superadmin/administracion/permisos" className="sidebar-item">🔐 Permisos</NavLink>
                     <NavLink to="/superadmin/administracion/asignar-permisos" className="sidebar-item">🗂️ Asignar Permisos</NavLink>
 

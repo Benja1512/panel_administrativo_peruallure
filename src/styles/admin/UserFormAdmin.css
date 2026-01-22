@@ -1,0 +1,18 @@
+.user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-form input,
+.user-form select {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.user-form button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px;
+}
