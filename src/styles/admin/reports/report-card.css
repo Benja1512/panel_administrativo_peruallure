@@ -1,0 +1,83 @@
+.report-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: transform 0.15s ease;
+}
+
+.report-card:hover {
+    transform: translateY(-4px);
+}
+
+.report-card h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.report-card p {
+    font-size: 14px;
+    color: #64748b;
+}
+
+.report-card button {
+    margin-top: auto;
+    align-self: flex-start;
+    background: #0f172a;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.inventory-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #334155;
+}
+
+.inventory-row .danger {
+    color: #dc2626;
+    font-weight: 700;
+}
+
+.inventory-row .warning {
+    color: #f59e0b;
+    font-weight: 700;
+}
+
+
+.user-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #334155;
+}
+
+.user-row .success {
+    color: #16a34a;
+    font-weight: 700;
+}
+
+.user-row .warning {
+    color: #f59e0b;
+    font-weight: 700;
+}
+.sales-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #334155;
+}
+
+.sales-row .success {
+    color: #16a34a;
+    font-weight: 700;
+}

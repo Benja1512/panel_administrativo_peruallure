@@ -1,0 +1,51 @@
+.report-ventas {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.report-ventas h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.report-ventas p {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.report-ventas .row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #334155;
+}
+
+.report-ventas .success {
+    color: #16a34a;
+    font-weight: 700;
+}
+
+.report-ventas .actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.report-ventas .actions button {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    background: #0f172a;
+    color: white;
+    cursor: pointer;
+}
+
+.report-ventas .actions button:hover {
+    opacity: 0.9;
+}

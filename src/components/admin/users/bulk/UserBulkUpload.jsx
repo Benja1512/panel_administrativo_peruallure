@@ -1,4 +1,4 @@
-import "../../../styles/admin/UserBulkUpload.css";
+import "../../../../styles/admin/UserBulkUpload.css";
 
 export default function UserBulkUpload() {
     return (

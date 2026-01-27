@@ -1,8 +1,5 @@
-import React from "react";
-import Administradores from "../../components/admin/users/Administradores";
-
-
+import UsersModule from "../../components/admin/users/UsersModule";
 
 export default function AdministradoresPage() {
-    return <Administradores />;
+    return <UsersModule />;
 }

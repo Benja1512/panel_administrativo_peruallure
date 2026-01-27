@@ -24,4 +24,20 @@
 .alert-card.critical h4 {
     color: #ef4444;
 }
+.dashboard-card {
+    background: #0b1220;
+    color: #e2e8f0;
+}
+
+.dashboard-card th {
+    background: #1e293b;
+}
+.dashboard-card {
+    background: #0b1220;
+    color: #e2e8f0;
+}
+
+.dashboard-card th {
+    background: #1e293b;
+}
 

@@ -1,23 +1,30 @@
 import React from "react";
-import KPIsOperativos from "./KPIsOperativos";
 
-// 🆕 KPIs nuevos
-import KPISaludSistema from "./KPISaludSistema";
-import KPIBacklog from "./KPIBacklog";
+/* ================= KPIs existentes ================= */
+import KPIsOperativos from "./kpis/KPIsOperativos";
+import KPISaludSistema from "./kpis/KPISaludSistema";
+import KPIBacklog from "./kpis/KPIBacklog";
 import TimelineActividad from "./TimelineActividad";
 
-// 📊 Gráficos operativos
+/* ================= KPIs PRO nuevos ================= */
+import KPIServicio from "./kpis/KPIServicio";
+import KPIInventario from "./kpis/KPIInventario";
+import KPISeguridad from "./kpis/KPISeguridad";
+import KPIFinanciero from "./kpis/KPIFinanciero";
+import KPITendencia from "./kpis/KPITendencia";
+
+/* ================= Charts ================= */
 import VentasPorDiaChart from "./charts/VentasPorDiaChart";
 import VentasPorCategoriaChart from "./charts/VentasPorCategoriaChart";
 import StockVsDemandaChart from "./charts/StockVsDemandaChart";
 import PedidosPorEstadoChart from "./charts/PedidosPorEstadoChart";
 import DevolucionesChart from "./charts/DevolucionesChart";
 
-// 🚨 Alertas y tablas
+/* ================= Alertas y tablas ================= */
 import AlertasOperativas from "./alerts/AlertasOperativas";
 import TablasOperativas from "./tables/TablasOperativas";
 
-// 🎨 CSS
+/* ================= CSS ================= */
 import "../../../styles/admin/analytics/analyticsKPIs.css";
 import "../../../styles/admin/analytics/charts.css";
 
@@ -26,21 +33,30 @@ const AnalyticsAdmin = () => {
         <div className="analytics-container">
             <h2 className="analytics-title">Analytics Admin</h2>
 
-            {/* KPIs OPERATIVOS */}
+            {/* ================= KPIs OPERATIVOS ================= */}
             <KPIsOperativos />
 
-            {/* KPIs ESTRATÉGICOS */}
+            {/* ================= KPIs DE GESTIÓN (NUEVOS) ================= */}
+            <div className="analytics-grid-small">
+                <KPIServicio />
+                <KPIInventario />
+                <KPISeguridad />
+                <KPIFinanciero />
+                <KPITendencia />
+            </div>
+
+            {/* ================= KPIs ESTRATÉGICOS ================= */}
             <div className="analytics-grid-small">
                 <KPISaludSistema />
                 <KPIBacklog />
             </div>
 
-            {/* TIMELINE */}
+            {/* ================= TIMELINE ================= */}
             <div className="analytics-section">
                 <TimelineActividad />
             </div>
 
-            {/* BLOQUE PRINCIPAL */}
+            {/* ================= GRÁFICOS ================= */}
             <div className="analytics-grid-main">
                 <AlertasOperativas />
                 <VentasPorDiaChart />
@@ -48,8 +64,10 @@ const AnalyticsAdmin = () => {
                 <StockVsDemandaChart />
                 <PedidosPorEstadoChart />
                 <DevolucionesChart />
-                <TablasOperativas />
             </div>
+
+            {/* ================= TABLAS ================= */}
+            <TablasOperativas />
         </div>
     );
 };

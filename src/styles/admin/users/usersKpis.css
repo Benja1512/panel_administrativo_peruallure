@@ -1,0 +1,10 @@
+.users-kpi {
+    background: white;
+    padding: 1.25rem;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+.users-kpi h4 {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}

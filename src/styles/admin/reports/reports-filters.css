@@ -1,0 +1,48 @@
+.reports-filters {
+    display: flex;
+    gap: 14px;
+    align-items: flex-end;
+    background: #ffffff;
+    padding: 1.2rem;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    flex-wrap: wrap;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 12px;
+    color: #475569;
+}
+
+.filter-group input,
+.filter-group select {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #cbd5f5;
+    font-size: 13px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.filter-group input:focus,
+.filter-group select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37,99,235,0.15);
+}
+
+.btn-filter {
+    padding: 9px 16px;
+    border-radius: 8px;
+    border: none;
+    background: #0f172a;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-filter:hover {
+    opacity: 0.9;
+}

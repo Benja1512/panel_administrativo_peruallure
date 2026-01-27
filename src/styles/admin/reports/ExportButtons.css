@@ -1,0 +1,39 @@
+.export-btn {
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: none;
+    background: #0f172a;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.export-btn:hover {
+    background: #1e293b;
+    transform: translateY(-1px);
+}
+
+.export-btn.pdf {
+    background: #dc2626;
+}
+
+.export-btn.pdf:hover {
+    background: #b91c1c;
+}
+
+.export-btn.excel {
+    background: #16a34a;
+}
+
+.export-btn.excel:hover {
+    background: #15803d;
+}
+
+.export-btn.csv {
+    background: #2563eb;
+}
+
+.export-btn.csv:hover {
+    background: #1d4ed8;
+}

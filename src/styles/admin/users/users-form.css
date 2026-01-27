@@ -1,0 +1,21 @@
+.users-form {
+    display: grid;
+    gap: 1rem;
+}
+
+.users-form label {
+    font-weight: 600;
+    color: #334155;
+}
+
+.users-form input,
+.users-form select {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #cbd5f5;
+    outline: none;
+}
+
+.users-form input:focus {
+    border-color: #2563eb;
+}

@@ -1,0 +1,10 @@
+@media (max-width: 900px) {
+    .reports-filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .reports-grid {
+        grid-template-columns: 1fr;
+    }
+}

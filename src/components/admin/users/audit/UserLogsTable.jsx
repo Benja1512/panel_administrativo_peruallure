@@ -1,4 +1,4 @@
-import "../../../styles/admin/UserLogsTable.css";
+import "../../../../styles/admin/UserLogsTable.css";
 
 export default function UserLogsTable({ logs = [] }) {
     return (

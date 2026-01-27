@@ -1,0 +1,40 @@
+.users-module {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+/* HEADER */
+.users-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.users-header h2 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+/* KPIs */
+.users-kpis {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+/* SECCIONES */
+.users-section {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.75rem;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.05);
+}
+
+.users-section h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #0f172a;
+}

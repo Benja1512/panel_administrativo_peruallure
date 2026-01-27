@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../../../styles/admin/UserFormAdmin.css";
+import "../../../../styles/admin/UserFormAdmin.css";
 
 export default function UserFormAdmin() {
     const [form, setForm] = useState({

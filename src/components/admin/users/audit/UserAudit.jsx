@@ -1,9 +1,9 @@
 import { useState } from "react";
-import AuditFilters from "../audit/AuditFilters";
-import AuditTable from "../audit/AuditTable";
-import AuditExportButton from "../audit/AuditExportButton";
-import AuditGraph from "../audit/AuditGraph";
-import "../../../styles/admin/UserAudit.css";
+import AuditFilters from "../../audit/AuditFilters";
+import AuditTable from "../../audit/AuditTable";
+import AuditExportButton from "../../audit/AuditExportButton";
+import AuditGraph from "../../audit/AuditGraph";
+import "../../../../styles/admin/UserAudit.css";
 
 export default function UserAudit() {
     const [filters, setFilters] = useState({});

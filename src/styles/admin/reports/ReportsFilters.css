@@ -1,0 +1,30 @@
+.reports-filters {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.reports-filters select,
+.reports-filters input {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #cbd5f5;
+    font-size: 13px;
+    color: #0f172a;
+    background: white;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.reports-filters select:hover,
+.reports-filters input:hover {
+    border-color: #94a3b8;
+}
+
+.reports-filters select:focus,
+.reports-filters input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}

@@ -1,0 +1,31 @@
+.reports-skeleton {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 1.2rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.skeleton-row {
+    display: grid;
+    grid-template-columns: 1fr 80px 120px 80px;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.skeleton-row > div {
+    height: 18px;
+    border-radius: 6px;
+    background: linear-gradient(
+            90deg,
+            #e5e7eb 25%,
+            #f1f5f9 37%,
+            #e5e7eb 63%
+    );
+    background-size: 400% 100%;
+    animation: skeleton 1.4s ease infinite;
+}
+
+@keyframes skeleton {
+    0% { background-position: 100% 0; }
+    100% { background-position: -100% 0; }
+}

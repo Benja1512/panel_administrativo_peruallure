@@ -1,0 +1,56 @@
+.report-inventario {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.report-inventario h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.report-inventario p {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.report-inventario .row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #334155;
+}
+
+.report-inventario .danger {
+    color: #dc2626;
+    font-weight: 700;
+}
+
+.report-inventario .warning {
+    color: #f59e0b;
+    font-weight: 700;
+}
+
+.report-inventario .actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.report-inventario .actions button {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    background: #0f172a;
+    color: white;
+    cursor: pointer;
+}
+
+.report-inventario .actions button:hover {
+    opacity: 0.9;
+}

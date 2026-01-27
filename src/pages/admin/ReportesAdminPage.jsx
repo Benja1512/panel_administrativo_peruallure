@@ -1,5 +1,5 @@
-import ReportesAdmin from "../../components/admin/reports/ReportesAdmin";
+import ReportsModule from "../../components/admin/reports/ReportsModule";
 
 export default function ReportesAdminPage() {
-    return <ReportesAdmin />;
+    return <ReportsModule />;
 }

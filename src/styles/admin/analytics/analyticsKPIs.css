@@ -1,87 +1,104 @@
+/* =====================================================
+   CONTENEDOR PRINCIPAL DEL DASHBOARD
+   ===================================================== */
 .analytics-container {
-    padding: 1.5rem;
+    padding: 2.5rem 2rem;   /* espacio arriba/abajo y laterales */
+    background: #ffffff;    /* fondo blanco general */
+    min-height: 100vh;      /* ocupa toda la pantalla */
 }
 
-.kpis-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.2rem;
-}
 
-/* Card base */
-.kpi-card {
-    background: #0f172a;
-    border-radius: 16px;
-    padding: 1.2rem;
-    color: white;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.kpi-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
-}
-
-.kpi-title {
-    font-size: 0.85rem;
-    color: #cbd5f5;
-    margin-bottom: 0.4rem;
-}
-
-.kpi-value {
-    font-size: 1.6rem;
-    font-weight: bold;
-    margin: 0;
-}
-
-.kpi-meta {
-    margin-top: 0.3rem;
-    font-size: 0.75rem;
-}
-
-/* Colores */
-.kpi-green { color: #22c55e; }
-.kpi-blue { color: #3b82f6; }
-.kpi-red { color: #ef4444; }
-.kpi-purple { color: #a855f7; }
-.kpi-orange { color: #f97316; }
-.analytics-container {
-    padding: 2rem;
-    background: #f8fafc;
-    min-height: 100vh;
-}
-
-.analytics-title {
-    font-size: 24px;
-    font-weight: 800;
-    color: #0f172a;
-    margin-bottom: 1.5rem;
-}
-
-.analytics-grid-small {
-    margin-top: 1.5rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
-}
-
+/* =====================================================
+   GRID DE GRÁFICOS (CHARTS)
+   ===================================================== */
 .analytics-grid-main {
-    margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 1.5rem;
+    gap: 2rem;              /* separación entre gráficos */
+}
+/* mueve el gráfico hacia abajo */
+.chart-card canvas,
+.chart-card svg {
+    margin-top: 24px;
 }
 
-.analytics-section {
-    margin-top: 2rem;
+
+/* baja el contenido del chart */
+.chart-card {
+    padding-top: 40px; /* antes ~24px */
 }
 
-/* cards visibles */
+/* si el título está muy arriba */
+.chart-card h4 {
+    margin-bottom: 16px;
+}
+
+
+/* =====================================================
+   GRID DE TABLAS OPERATIVAS
+   ===================================================== */
+.tables-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 tablas en desktop */
+    gap: 2rem;                              /* espacio entre tablas */
+    margin-top: 2.5rem;                     /* aire arriba */
+    margin-bottom: 2.5rem;                  /* aire abajo */
+}
+
+
+/* =====================================================
+   CARDS GENERALES (TABLAS, KPIs, BLOQUES)
+   ===================================================== */
+.table-card,
 .dashboard-card {
-    background: white;
-    border-radius: 14px;
-    padding: 1.5rem;
-    box-shadow: 0 8px 22px rgba(0,0,0,0.06);
-    color: #0f172a;
+    background: linear-gradient(180deg, #ffffff 0%, #cbcddd 100%); /* fondo gradiente */
+    color: #000000;                                                /* texto blanco */
+}
+
+
+/* =====================================================
+   ALERTAS OPERATIVAS
+   ===================================================== */
+.alert-card {
+    background: #ffffff;                    /* fondo blanco */
+    color: #000000;                         /* color base (se sobreescribe abajo) */
+    padding: 24px;                          /* espacio interno */
+    border-radius: 18px;                    /* bordes redondeados */
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25); /* sombra */
+    margin-bottom: 16px;                    /* separación entre alertas */
+}
+
+
+
+/* separación entre alertas */
+.alert-card {
+    margin-bottom: 32px;  /* antes 16px → ahora más aire */
+}
+
+/* separación interna (aire dentro del bloque) */
+.alert-card {
+    padding: 32px;        /* antes 24px → más espacio interno */
+}
+
+/* separación con lo que está arriba */
+.alert-card:first-child {
+    margin-top: 24px;
+}
+
+/* =====================================================
+   TÍTULOS DE ALERTAS (WARNING)
+   ===================================================== */
+.alert-card h4 {
+    color: #000000;                         /* naranja de alerta */
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+   TEXTO DE ALERTAS
+   ===================================================== */
+.alert-card p,
+.alert-card li {
+    color: #e5e7eb;                         /* gris claro para legibilidad */
 }

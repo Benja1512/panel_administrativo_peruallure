@@ -5,14 +5,7 @@ import UsuariosRecientesTable from "./UsuariosRecientesTable";
 import LogsOperativosTable from "./LogsOperativosTable";
 
 const TablasOperativas = () => (
-    <div
-        style={{
-            marginTop: "2rem",
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))",
-            gap: "1.5rem"
-        }}
-    >
+    <div className="tables-grid">
         <UltimosPedidosTable />
         <ProductosCriticosTable />
         <UsuariosRecientesTable />

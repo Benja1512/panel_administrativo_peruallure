@@ -1,4 +1,4 @@
-import "../../../styles/admin/UserLogsExportButton.css";
+import "../../../../styles/admin/UserLogsExportButton.css";
 
 export default function UserLogsExportButton({ logs = [] }) {
     const exportarCSV = () => {

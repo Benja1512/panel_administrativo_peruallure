@@ -1,4 +1,4 @@
-import "../../../styles/admin/UserModalForm.css";
+import "../../../../styles/admin/UserModalForm.css";
 
 export default function UserModalForm({ children, onClose }) {
     return (
