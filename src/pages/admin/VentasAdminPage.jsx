@@ -1,5 +1,5 @@
-import VentasAdmin from "../../components/admin/sales/VentasAdmin";
+import VentasModule from "../../components/admin/sales/VentasModule";
 
 export default function VentasAdminPage() {
-    return <VentasAdmin />;
+    return <VentasModule />;
 }

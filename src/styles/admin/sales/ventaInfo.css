@@ -1,0 +1,41 @@
+.venta-info {
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 14px;
+}
+
+.venta-info h4 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.venta-info__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+}
+
+.venta-info__grid div {
+    background: #f8fafc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.venta-info span {
+    font-size: 11px;
+    font-weight: 700;
+    color: #64748b;
+}
+
+.venta-info b {
+    display: block;
+    margin-top: 4px;
+    font-size: 13px;
+    font-weight: 900;
+    color: #0f172a;
+}
+
+.venta-info b.success {
+    color: #15803d;
+}

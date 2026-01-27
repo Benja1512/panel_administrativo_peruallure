@@ -1,0 +1,35 @@
+.ventas-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+.ventas-filters input,
+.ventas-filters select {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    font-size: 13px;
+}
+.ventas-filters {
+    display: flex;
+    gap: 12px;
+    padding: 12px 16px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.ventas-filters input,
+.ventas-filters select {
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    font-size: 14px;
+}

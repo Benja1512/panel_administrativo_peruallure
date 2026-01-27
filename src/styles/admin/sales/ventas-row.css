@@ -1,0 +1,24 @@
+.ventas-row td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.ventas-row:hover td {
+    background: #f8fafc;
+}
+
+.ventas-row .mono {
+    font-family: monospace;
+}
+
+.ventas-row .strong {
+    font-weight: 600;
+}
+
+.ventas-row .right {
+    text-align: right;
+}
+
+.ventas-row .center {
+    text-align: center;
+}

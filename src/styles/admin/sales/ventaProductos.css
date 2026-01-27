@@ -1,0 +1,23 @@
+.venta-productos {
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 14px;
+}
+
+.venta-productos h4 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.venta-productos table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.venta-productos th,
+.venta-productos td {
+    padding: 8px;
+    font-size: 12px;
+    border-bottom: 1px solid #e5e7eb;
+}

@@ -1,0 +1,25 @@
+.ventas-mes {
+    background: white;
+    border-radius: 16px;
+    padding: 14px;
+}
+
+.ventas-mes h4 {
+    margin: 0 0 10px;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.ventas-mes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ventas-mes li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 13px;
+}

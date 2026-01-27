@@ -1,0 +1,64 @@
+.ventas-kpi {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
+
+.ventas-kpi__title {
+    margin: 0 0 14px 0;
+    font-size: 16px;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.ventas-kpi__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+}
+
+.ventas-kpi__card {
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 14px;
+    background: #fff;
+    transition: transform 0.15s ease;
+}
+
+.ventas-kpi__card:hover {
+    transform: translateY(-3px);
+}
+
+.ventas-kpi__label {
+    font-size: 12px;
+    font-weight: 800;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.ventas-kpi__value {
+    margin-top: 6px;
+    font-size: 22px;
+    font-weight: 900;
+    color: #0f172a;
+}
+
+.ventas-kpi__change {
+    margin-top: 6px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.ventas-kpi__change.success {
+    color: #15803d;
+}
+
+.ventas-kpi__change.neutral {
+    color: #334155;
+}
+
+.ventas-kpi__change.danger {
+    color: #b91c1c;
+}

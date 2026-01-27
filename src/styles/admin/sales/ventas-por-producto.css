@@ -1,0 +1,21 @@
+.ventas-producto {
+    background: white;
+    border-radius: 16px;
+    padding: 14px;
+}
+
+.ventas-producto h4 {
+    margin: 0 0 10px;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.ventas-producto__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-radius: 8px;
+    background: #f8fafc;
+    margin-bottom: 6px;
+    font-size: 13px;
+}

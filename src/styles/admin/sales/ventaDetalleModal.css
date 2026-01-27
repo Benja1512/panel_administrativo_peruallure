@@ -1,0 +1,46 @@
+.venta-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.venta-modal {
+    width: 100%;
+    max-width: 920px;
+    background: white;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.3);
+}
+
+.venta-modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.venta-modal__header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.venta-modal__header button {
+    border: none;
+    background: #f1f5f9;
+    border-radius: 8px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.venta-modal__content {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+}

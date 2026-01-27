@@ -1,0 +1,86 @@
+/* ================================
+   CARD BASE (reusable)
+================================ */
+.card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e5e7eb;
+    transition: all 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ================================
+   TITLES
+================================ */
+.title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #475569;
+    margin-bottom: 16px;
+}
+
+/* ================================
+   CHART CONTAINER
+================================ */
+.recharts-responsive-container {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+/* ================================
+   TOOLTIP (custom look)
+================================ */
+.recharts-tooltip-wrapper {
+    outline: none;
+}
+
+.recharts-default-tooltip {
+    background: white !important;
+    border-radius: 12px !important;
+    border: 1px solid #e5e7eb !important;
+    padding: 8px 12px !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.recharts-tooltip-label {
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.recharts-tooltip-item {
+    color: #334155 !important;
+    font-size: 13px;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 640px) {
+    .card {
+        padding: 16px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+}
